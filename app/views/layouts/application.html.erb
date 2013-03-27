@@ -18,9 +18,10 @@
   <h2>Sign up or sign in</h2>
   <ul>
     <li><%= link_to "Sign up", new_user_path %></li>
-    <li>Username</li>
-    <li>Password</li>
+    <li><%= link_to "Sign in", new_session_path %></li>
   </ul>
+
+    <h3><%= flash[:alert] %></h3>
 
 
 <%= yield %>

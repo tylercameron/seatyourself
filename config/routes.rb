@@ -1,5 +1,7 @@
 Sy::Application.routes.draw do
   resources :users
+  resources :sessions, only: [:create, :destroy, :new]
+
   root :to => 'home#home'
 
   # The priority is based upon order of creation:
