@@ -1,6 +1,7 @@
 Sy::Application.routes.draw do
   resources :users
   resources :sessions, only: [:create, :destroy, :new]
+  resources :restaurants, only: [:index, :show]
 
   root :to => 'home#home'
 
