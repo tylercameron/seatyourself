@@ -1,13 +1,15 @@
 <h2>Sign up for SeatYourself</h2>
 
-<h3>Errors:</h3>
-<div class="errors">
-  <ul>
-  <% @user.errors.full_messages.each do |e| %>
-    <li><%= e %></li>
-  <% end %>
-  </ul>
-</div>
+<% if @user.errors.any? %>
+  <h3>Errors:</h3>
+  <div class="errors">
+    <ul>
+    <% @user.errors.full_messages.each do |e| %>
+      <li><%= e %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
 
 
 <%= form_for(@user) do |f| %>
