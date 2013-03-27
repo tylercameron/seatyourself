@@ -36,4 +36,10 @@ class UserTest < ActiveSupport::TestCase
     refute user.authenticate("ghi789")
   end
 
+  test "two users cannot have same email" do
+    user1 = FactoryGirl.create(:user)
+    user2 = FactoryGirl.build(:user)
+    refute user2.save
+  end
+
 end
