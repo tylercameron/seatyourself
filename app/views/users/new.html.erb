@@ -3,8 +3,8 @@
 <h3>Errors:</h3>
 <div class="errors">
   <ul>
-  <%= @user.errors.each do |e| %>
-    <li><%= e.full_message %></li>
+  <% @user.errors.full_messages.each do |e| %>
+    <li><%= e %></li>
   <% end %>
   </ul>
 </div>
