@@ -72,6 +72,8 @@ label {
 
 section#content {
   margin-left: 25px;
+  margin-top: 50px;
+
 }
 
 .errors {
@@ -93,4 +95,40 @@ section#content {
 
 .field_with_errors input {
   border: 1px solid red;
+}
+
+section.restaurant {
+  width: 750px;
+}
+
+
+section.restaurant img {
+  float: left;
+  margin-right: 25px;
+}
+
+section.restaurant a {
+  font-size: 40px;
+}
+
+section.restaurant:nth-child(odd) {
+  background-color: #eee;
+}
+
+section.restaurant:hover {
+  background-color: #ddd;
+}
+
+
+section.restaurant-details img {
+  float: left;
+  margin-right: 25px;
+}
+
+section.restaurant-details h3 {
+  font-size: 55px;
+}
+
+.clear {
+  clear: both;
 }
