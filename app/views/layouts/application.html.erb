@@ -18,8 +18,13 @@
 
   <section id="login">
     <ul>
+      <% if current_user %>
+      You are signed in as <%= current_user.name %>.
+      <%= link_to "Sign out", session_path("current"), method: :delete %>
+      <% else %> 
       <li><%= link_to "Sign up", new_user_path %></li>
       <li><%= link_to "Sign in", new_session_path %></li>
+      <% end %>
     </ul>
   </section>
   
