@@ -63,6 +63,26 @@ label {
 }
 
 section#content {
-
   margin-left: 25px;
+}
+
+.errors {
+  color: red;
+  width: 300px;
+}
+
+.errors ul li {
+  margin-bottom: 5px;
+}
+
+.errors ul li:nth-child(even) {
+  color: red;
+}
+
+.errors ul li:nth-child(odd) {
+  color: #cc0000;
+}
+
+.field_with_errors input {
+  border: 1px solid red;
 }

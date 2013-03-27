@@ -1,8 +1,8 @@
 <h2>Sign up for SeatYourself</h2>
 
 <% if @user.errors.any? %>
-  <h3>Errors:</h3>
   <div class="errors">
+    <h3>Please fix the following errors:</h3>
     <ul>
     <% @user.errors.full_messages.each do |e| %>
       <li><%= e %></li>
