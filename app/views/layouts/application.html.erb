@@ -8,23 +8,30 @@
 </head>
 <body>
   <h1>SeatYourself</h1>
-  <h2>Navigation</h2>
-  <ul>
-    <li>Restaurants</li>
-    <li>Categories</li>
-    <li>Your reservations</li>
-  </ul>
+  <nav>
+    <ul>
+      <li>Restaurants</li>
+      <li>Categories</li>
+      <li>Your reservations</li>
+    </ul>
+  </nav>
 
-  <h2>Sign up or sign in</h2>
-  <ul>
-    <li><%= link_to "Sign up", new_user_path %></li>
-    <li><%= link_to "Sign in", new_session_path %></li>
-  </ul>
+  <section id="login">
+    <ul>
+      <li><%= link_to "Sign up", new_user_path %></li>
+      <li><%= link_to "Sign in", new_session_path %></li>
+    </ul>
+  </section>
+  
+  <section id="content">
 
-    <h3><%= flash[:alert] %></h3>
+    <% if flash[:alert] %>
+      <section id="alert"><%= flash[:alert] %></section>
+    <% end %>
 
+    <%= yield %>
 
-<%= yield %>
+  </section>
 
 </body>
 </html>
