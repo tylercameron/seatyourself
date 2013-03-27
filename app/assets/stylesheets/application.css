@@ -58,6 +58,14 @@ section#alert {
   color: red;
 }
 
+section#notice {
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid #336600;
+  width: 250px;
+  color: #336600;
+}
+
 label {
   display: block;
 }

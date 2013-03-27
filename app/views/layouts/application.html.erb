@@ -34,6 +34,10 @@
       <section id="alert"><%= flash[:alert] %></section>
     <% end %>
 
+    <% if flash[:notice] %>
+      <section id="notice"><%= flash[:notice] %></section>
+    <% end %>
+
     <%= yield %>
 
   </section>

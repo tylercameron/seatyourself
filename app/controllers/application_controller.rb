@@ -6,7 +6,11 @@ class ApplicationController < ActionController::Base
   end
 
   def current_user=(user)
-    session[:user_id] = user.id
+    if user.nil?
+      session.delete(:user_id)
+    else
+      session[:user_id] = user.id
+    end
   end
 
   helper_method :current_user
