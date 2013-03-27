@@ -5,5 +5,5 @@ class User < ActiveRecord::Base
   
   # We will need to limit this to :on => [:create] once we have a 
   # edit user page.
-  validates :password, :password_confirmation, :presence => true 
+  validates :password_confirmation, :presence => true 
 end
