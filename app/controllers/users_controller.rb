@@ -6,8 +6,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params[:user])
     if @user.save
-      current_user = @user
-      redirect_to root_path
+      self.current_user = @user
+      redirect_to root_path, :notice => "Welcome #{@user.name}!"
     else
       render :new
     end
