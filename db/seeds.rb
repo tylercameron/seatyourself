@@ -28,7 +28,8 @@ Restaurant.create(
   :address => "180 Wellington St",
   :phone => "555-1212",
   :description => "Whoppers!",
-  :category => fast
+  :category => fast,
+  :capacity => 1
 )
 
 Restaurant.create(
@@ -36,7 +37,8 @@ Restaurant.create(
   :address => "277 Front St W",
   :phone => "555-1212",
   :description => "Big Macs!",
-  :category => fast
+  :category => fast,
+  :capacity => 1
 )
 
 Restaurant.create(
@@ -44,7 +46,8 @@ Restaurant.create(
   :address => "599 Queen St W",
   :phone => "967-1111",
   :description => "Chewy pizzas!",
-  :category => pizza
+  :category => pizza,
+  :capacity => 1
 )
 
 Restaurant.create(
@@ -52,7 +55,8 @@ Restaurant.create(
   :address => "329832 Steeles Ave W",
   :phone => "333-3333",
   :description => "Greasy pizzas!",
-  :category => pizza
+  :category => pizza,
+  :capacity => 1
 )
 
 

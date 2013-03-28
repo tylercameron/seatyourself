@@ -7,6 +7,8 @@ FactoryGirl.define do
     phone "555-1212"
     picture "burgerplace.jpg"
     description "Burgers!"
-    category FactoryGirl.create(:category)
+    category do 
+      FactoryGirl.create(:category)
+    end
   end
 end
