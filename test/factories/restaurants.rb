@@ -2,11 +2,11 @@
 
 FactoryGirl.define do
   factory :restaurant do
-    name "MyString"
-    address "MyString"
-    phone "MyString"
-    picture "MyString"
-    description "MyText"
-    category nil
+    name "BurgerPlace"
+    address "123 Elm"
+    phone "555-1212"
+    picture "burgerplace.jpg"
+    description "Burgers!"
+    category FactoryGirl.create(:category)
   end
 end
