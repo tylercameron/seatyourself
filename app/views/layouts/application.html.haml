@@ -1,0 +1,33 @@
+!!!
+%html
+%head
+  %title SeatYourself
+  = stylesheet_link_tag    "application", :media => "all"
+  = javascript_include_tag "application"
+  = csrf_meta_tags
+%body
+  %h1= link_to "SeatYourself", root_path
+  %nav
+    %ul
+      %li= link_to "Restaurants", restaurants_path
+      %li Categories
+      %li Your reservations
+
+  %section#login
+    %ul
+    - if current_user
+      You are signed in as
+      = current_user.name
+    - else
+      %li= link_to "Sign up", new_user_path
+      %li= link_to "Sign in", new_session_path
+
+  %section#content
+    - if flash[:alert]
+      %section#alert
+        = flash[:alert]
+    - if flash[:notice]
+      %section#notice
+        = flash[:notice]
+
+    = yield

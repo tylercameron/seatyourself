@@ -1,0 +1,36 @@
+%section.restaurant-details
+  = image_tag "http://farm4.staticflickr.com/3027/2896972929_d55c6d30de.jpg"
+
+  %h3= @restaurant.name
+
+  %p
+    %strong Address:
+    = @restaurant.address
+  %p
+    %strong Phone:
+    = @restaurant.phone
+  %p
+    %strong Description:
+    = @restaurant.description
+  %p
+    %strong Category:
+    = @restaurant.category.name
+
+  .clear
+
+%section.timeslots
+
+%h4
+  Make a reservation at
+  = @restaurant.name
+
+%ul
+  // Links will go here.
+  %li Wed Mar 27 4:30 - 5:00
+  %li Wed Mar 27 4:30 - 5:00
+  %li Wed Mar 27 4:30 - 5:00
+  %li Wed Mar 27 4:30 - 5:00
+  %li Wed Mar 27 4:30 - 5:00
+  %li Wed Mar 27 4:30 - 5:00
+  %li Wed Mar 27 4:30 - 5:00
+  %li Wed Mar 27 4:30 - 5:00
