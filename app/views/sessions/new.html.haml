@@ -1,0 +1,14 @@
+%h2 Please sign in
+
+= form_tag '/sessions' do
+
+  %div
+    = label_tag "Email address"
+    = text_field_tag :email
+
+  %div
+    = label_tag "Password"
+    = text_field_tag :password
+
+  %div
+    = submit_tag 'Sign me in'

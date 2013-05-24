@@ -1,0 +1,13 @@
+%h3 All restaurants
+
+- @restaurants.each do |r|
+  %section.restaurant
+    = image_tag "http://farm4.staticflickr.com/3027/2896972929_d55c6d30de_s.jpg"
+    = link_to r.name, r
+    %p.category
+      Category:
+      %strong
+        = r.category.name
+
+    %p.desc
+      = shorten(r.description)
