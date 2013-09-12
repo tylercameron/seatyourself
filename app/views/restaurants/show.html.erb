@@ -6,7 +6,9 @@
   <p><strong>Address: </strong><%= @restaurant.address %></p>
   <p><strong>Phone: </strong><%= @restaurant.phone %></p>
   <p><strong>Description: </strong><%= @restaurant.description %></p>
-  <p><strong>Category: </strong><%= @restaurant.category.name %></p>
+  <% if @restaurant.category %>
+    <p><strong>Category: </strong><%= @restaurant.category.name %></p>
+  <% end %>
 
   <div class="clear"></div>
 </section>
