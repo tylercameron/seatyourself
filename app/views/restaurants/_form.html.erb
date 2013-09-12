@@ -1,0 +1,56 @@
+<%= form_for @restaurant do |f| %>
+
+  <% if @restaurant.errors.any? %>
+    <div id="error_explanation">
+      <%= pluralize(@restaurant.errors.count, "problem") %>
+      <ul>
+        <% @restaurant.errors.full_messages.each do |error_message| %>
+          <li><%= error_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :address %>
+    <%= f.text_field :address %>
+  </div>
+
+  <div class="field">
+    <%= f.label :phone %>
+    <%= f.text_field :phone %>
+  </div>
+
+  <!--
+  <div class="field">
+    <%= f.label :picture %>
+    <%= f.text_field :picture %>
+  </div>
+  -->
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+
+  <!--
+  <div class="field">
+    <%= f.label :category_id %>
+    <%= f.text_field :category_id %>
+  </div>
+  -->
+
+  <div class="field">
+    <%= f.label :capacity %>
+    <%= f.number_field :capacity, :min => 1, :max => 500 %>
+    <%# note: validations should always be in the model. the min/max set here should be changed to use the same values set there %>
+  </div>
+
+  <%= f.submit %>
+
+<% end %>

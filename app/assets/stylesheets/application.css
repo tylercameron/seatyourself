@@ -104,6 +104,7 @@ section#content {
 
 section.restaurant {
   width: 750px;
+  clear: both;
 }
 
 

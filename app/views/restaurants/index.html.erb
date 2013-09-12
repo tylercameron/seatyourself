@@ -1,10 +1,18 @@
 <h3>All restaurants</h3>
 
-<% @restaurants.each do |r| %>
+<section style="clear:both">
+<% @restaurants.each do |restaurant| %>
+
   <section class="restaurant">
     <%= image_tag "http://farm4.staticflickr.com/3027/2896972929_d55c6d30de_s.jpg" %>
-    <%= link_to r.name, r %>
-    <p class="category">Category: <strong><%= r.category.name %></strong></p>
-    <p class="desc"><%= shorten(r.description) %></p>
+    <%= link_to restaurant.name, restaurant %>
+    <% if restaurant.category %>
+      <p class="category">Category: <strong><%= restaurant.category.name %></strong></p>
+    <% end %>
+    <p class="desc"><%= shorten(restaurant.description) %></p>
   </section>
+
 <% end %>
+</section>
+
+<p style="margin-top:3em"><%= link_to 'Add Restaurant', new_restaurant_path %></p>
