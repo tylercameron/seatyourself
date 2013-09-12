@@ -13,20 +13,13 @@
   <div class="clear"></div>
 </section>
 
-<section class="timeslots">
 
-<h4>Make a reservation at <%= @restaurant.name %></h4>
-
-<ul>
-  <!-- Links will go here. -->
-  <li>Wed Mar 27 4:30 - 5:00</li>
-  <li>Wed Mar 27 4:30 - 5:00</li>
-  <li>Wed Mar 27 4:30 - 5:00</li>
-  <li>Wed Mar 27 4:30 - 5:00</li>
-  <li>Wed Mar 27 4:30 - 5:00</li>
-  <li>Wed Mar 27 4:30 - 5:00</li>
-  <li>Wed Mar 27 4:30 - 5:00</li>
-  <li>Wed Mar 27 4:30 - 5:00</li>
-</ul>
-
-</section>
+<% if current_user %>
+  <h4>Make a reservation at <%= @restaurant.name %></h4>
+  <%= form_for [@restaurant, @reservation] do |f| %>
+    <%= f.label :notes %>
+    <%= f.text_field :notes %>
+    <br />
+    <%= f.submit %>
+  <% end %>
+<% end %>

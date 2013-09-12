@@ -15,4 +15,6 @@
 <% end %>
 </section>
 
-<p style="margin-top:3em"><%= link_to 'Add Restaurant', new_restaurant_path %></p>
+<% if current_user %>
+  <p style="margin-top:3em"><%= link_to 'Add Restaurant', new_restaurant_path %></p>
+<% end %>
