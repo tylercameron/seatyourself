@@ -4,6 +4,7 @@
   <% @user.reservations.each do |reservation| %>
     <li>
       <%= link_to reservation.restaurant.name, reservation.restaurant %>
+      <%= nice_datetime reservation.begin_time %>
       <%= reservation.notes %>
     </li>
   <% end %>

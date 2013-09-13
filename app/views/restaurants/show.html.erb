@@ -17,9 +17,14 @@
 <% if current_user %>
   <h4>Make a reservation at <%= @restaurant.name %></h4>
   <%= form_for [@restaurant, @reservation] do |f| %>
-    <%= f.label :notes %>
-    <%= f.text_field :notes %>
-    <br />
+    <div class="field">
+      <%= f.label :begin_time, 'When' %>
+      <%= f.datetime_select :begin_time %>
+    </div>
+    <div class="field">
+      <%= f.label :notes %>
+      <%= f.text_field :notes %>
+    </div>
     <%= f.submit %>
   <% end %>
 <% end %>
