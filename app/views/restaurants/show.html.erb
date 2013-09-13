@@ -19,7 +19,7 @@
   <%= form_for [@restaurant, @reservation] do |f| %>
     <div class="field">
       <%= f.label :begin_time, 'When' %>
-      <%= f.datetime_select :begin_time %>
+      <%= f.select :begin_time, @reservation.available_times.map{|dt| [nice_datetime(dt), dt] } %>
     </div>
     <div class="field">
       <%= f.label :notes %>
