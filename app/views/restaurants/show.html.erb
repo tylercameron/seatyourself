@@ -25,6 +25,10 @@
       <%= f.label :notes %>
       <%= f.text_field :notes %>
     </div>
+    <div class="field">
+      <%= f.label :people %>
+      <%= f.number_field :people, :value => 1, :min => 1 %>
+    </div>
     <%= f.submit %>
   <% end %>
 <% end %>

@@ -1,7 +1,7 @@
 class Reservation < ActiveRecord::Base
 
   # attributes
-  attr_accessible :begin_time, :end_time, :notes
+  attr_accessible :begin_time, :end_time, :notes, :people
 
   def opening_hour
     11
