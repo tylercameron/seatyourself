@@ -1,15 +1,6 @@
 <%= form_for @restaurant do |f| %>
 
-  <% if @restaurant.errors.any? %>
-    <div id="error_explanation">
-      <%= pluralize(@restaurant.errors.count, "problem") %>
-      <ul>
-        <% @restaurant.errors.full_messages.each do |error_message| %>
-          <li><%= error_message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
+  <%= render 'shared/form_errors', :thing => @restaurant %>
 
   <div class="field">
     <%= f.label :name %>

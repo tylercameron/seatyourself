@@ -1,0 +1,10 @@
+<% if thing.errors.any? %>
+  <div id="error_explanation">
+    <%= pluralize(thing.errors.count, "problem") %>
+    <ul>
+      <% thing.errors.full_messages.each do |error_message| %>
+        <li><%= error_message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

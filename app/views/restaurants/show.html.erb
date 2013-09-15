@@ -17,9 +17,10 @@
 <% if current_user %>
   <h4>Make a reservation at <%= @restaurant.name %></h4>
   <%= form_for [@restaurant, @reservation] do |f| %>
+    <%= render 'shared/form_errors', :thing => @reservation %>
     <div class="field">
       <%= f.label :begin_time, 'When' %>
-      <%= f.select :begin_time, @reservation.available_times.map{|dt| [nice_datetime(dt), dt] } %>
+      <%= f.select :begin_time, @restaurant.time_slots.map{|dt| [nice_datetime(dt), dt] } %>
     </div>
     <div class="field">
       <%= f.label :notes %>
