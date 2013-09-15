@@ -11,8 +11,8 @@ class UsersControllerTest < ActionController::TestCase
     post :create, user: params
 
     # This is icky, can't we do something with regex or something?
-    assert_select ".errors ul li", "Password can&#x27;t be blank"
-    assert_select ".errors ul li", "Password confirmation can&#x27;t be blank"
+    assert_select "#error_explanation li", "Password can&#x27;t be blank"
+    assert_select "#error_explanation li", "Password confirmation can&#x27;t be blank"
   end
 
   test "user is created" do
