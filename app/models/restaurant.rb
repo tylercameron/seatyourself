@@ -41,6 +41,7 @@ class Restaurant < ActiveRecord::Base
   end
 
   def is_available?(begin_time, people)
+    # TODO FIX actually this is wrong... if capacity = 10 and there are 7 people for the first hour and 7 for the second, it will say over capacity...
     reserved = self.reservations.where("begin_time <= ?", begin_time).where("end_time >= ?", begin_time + reservation_interval).group('restaurant_id').sum(:people)[self.id].to_i
     self.capacity - (reserved + people) >= 0
   end
