@@ -13,7 +13,7 @@ describe Restaurant do
 		restaurant.should be_valid
 	end
 
-	it "must have an integer capacity" do
+	it "must have an positive integer capacity" do
 		restaurant.capacity.should be_kind_of Integer
 		restaurant.capacity.should be >= 1
 	end
