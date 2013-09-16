@@ -18,7 +18,7 @@ class Restaurant < ActiveRecord::Base
   end
 
   # associations
-  belongs_to :category
+  # belongs_to :category # not actually being used yet
   has_many :reservations
 
   def time_slots # does not take availability into account
