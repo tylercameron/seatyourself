@@ -14,5 +14,7 @@ end
 
 group :test, :development do
   gem 'factory_girl_rails'
+  gem 'rspec-rails'
+  gem 'assert_difference' # using within rspec
   gem 'pry'
 end

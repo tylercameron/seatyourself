@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130328150812) do
+ActiveRecord::Schema.define(:version => 20130916212632) do
 
   create_table "categories", :force => true do |t|
     t.string   "name"
@@ -21,12 +21,12 @@ ActiveRecord::Schema.define(:version => 20130328150812) do
 
   create_table "reservations", :force => true do |t|
     t.datetime "begin_time"
-    t.datetime "end_time"
     t.integer  "restaurant_id"
     t.integer  "user_id"
     t.text     "notes"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
+    t.integer  "people",        :default => 1
   end
 
   add_index "reservations", ["restaurant_id"], :name => "index_reservations_on_restaurant_id"
@@ -39,9 +39,9 @@ ActiveRecord::Schema.define(:version => 20130328150812) do
     t.string   "picture"
     t.text     "description"
     t.integer  "category_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-    t.integer  "capacity"
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
+    t.integer  "capacity",    :default => 100
   end
 
   add_index "restaurants", ["category_id"], :name => "index_restaurants_on_category_id"
