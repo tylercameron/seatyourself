@@ -1,21 +1,19 @@
 class Restaurant < ActiveRecord::Base
 
-  # attributes
-  attr_accessible :address, :description, :name, :phone, :picture, :category, :capacity
   validates :name, :presence => true
+
+  belongs_to :category # not actually being used yet
+  has_many :reservations
 
   # These methods return the opening and closing hours for a restaurant
   # A possible new feature would be to make these additional columns so that each restaurant could have its own hours
   def opening_hour
     11 # i.e. 11:00 AM
   end
+
   def closing_hour
     20 # i.e. 8:00 PM
   end
-
-  # associations
-  belongs_to :category # not actually being used yet
-  has_many :reservations
 
   # ASSUMPTIONS
   # These assumptions are required in order for the code below to make sense

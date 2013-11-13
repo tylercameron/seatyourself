@@ -12,11 +12,10 @@ describe UsersController do
 	      email: "example@example.org",
 	      password: "",
 	      password_confirmation: ""
-	    }    
+	    }
 	    post :create, user: params
 		expect(response.status).to eq(200)
-		expect(response.body).to match 'Password can&#x27;t be blank'
-		expect(response.body).to match 'Password confirmation can&#x27;t be blank'
+		expect(response.body).to match 'Password can&#39;t be blank'
 	end
 
 	it "creates a user" do
