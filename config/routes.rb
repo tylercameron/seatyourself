@@ -1,5 +1,4 @@
 Sy::Application.routes.draw do
-
   root to: 'home#home'
 
   resources :restaurants do
@@ -9,4 +8,6 @@ Sy::Application.routes.draw do
   resources :users, only: [:show, :new, :create]
   resources :sessions, only: [:create, :destroy, :new]
 
+  get 'login' => 'sessions#new', :as => :login
+  post 'logout' => 'sessions#destroy', :as => :logout
 end

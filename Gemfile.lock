@@ -29,7 +29,7 @@ GEM
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
     assert_difference (0.5.0)
-    bcrypt-ruby (3.1.2)
+    bcrypt-ruby (3.0.1)
     builder (3.2.2)
     coderay (1.1.0)
     coffee-rails (4.0.1)
@@ -60,6 +60,8 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.1)
+    jwt (0.1.8)
+      multi_json (>= 1.5)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -135,7 +137,6 @@ PLATFORMS
 
 DEPENDENCIES
   assert_difference
-  bcrypt-ruby
   coffee-rails
   factory_girl_rails
   haml-rails
@@ -144,5 +145,6 @@ DEPENDENCIES
   rails (= 4.1.4)
   rspec-rails
   sass-rails
+  sorcery
   sqlite3
   uglifier

@@ -46,12 +46,13 @@ ActiveRecord::Schema.define(:version => 20130916212632) do
 
   add_index "restaurants", ["category_id"], :name => "index_restaurants_on_category_id"
 
-  create_table "users", :force => true do |t|
+  create_table "users", force: true do |t|
     t.string   "name"
     t.string   "email"
-    t.string   "password_digest"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.string   "crypted_password"
+    t.string   "salt"
   end
 
 end
