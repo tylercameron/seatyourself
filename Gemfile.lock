@@ -46,6 +46,7 @@ GEM
     factory_girl_rails (4.3.0)
       factory_girl (~> 4.3.0)
       railties (>= 3.0.0)
+    geocoder (1.1.8)
     haml (4.0.4)
       tilt
     haml-rails (0.4)
@@ -135,6 +136,7 @@ DEPENDENCIES
   bcrypt-ruby
   coffee-rails
   factory_girl_rails
+  geocoder
   haml-rails
   jquery-rails
   pry
