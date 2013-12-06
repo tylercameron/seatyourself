@@ -2,7 +2,9 @@ class RestaurantsController < ApplicationController
 
   def index
     @restaurants = if params[:search]
-      Restaurant.near(params[:search])
+      Restaurant.near(params[:search], 5, units: :km)
+    elsif params[:longitude] && params[:latitude]
+      Restaurant.near([params[:latitude], params[:longitude]], 5, units: :km)
     else
       Restaurant.all
     end

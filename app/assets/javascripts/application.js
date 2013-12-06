@@ -13,3 +13,31 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(document).ready(function() {
+
+  function geolocationSuccess(position) {
+    var latitude = position.coords.latitude;
+    var longitude = position.coords.longitude;
+
+    $.ajax({
+      url: "/restaurants",
+      method: 'GET',
+      data: {
+        latitude: latitude,
+        longitude: longitude,
+      },
+      dataType: 'script'
+    });
+  }
+
+  function geolocationError(error) {
+    console.log("There was an error :( ");
+  }
+
+  if ("geolocation" in navigator) {
+    navigator.geolocation.getCurrentPosition(geolocationSuccess, geolocationError);
+  } else {
+    alert("Get a better browser!");
+  }
+});
