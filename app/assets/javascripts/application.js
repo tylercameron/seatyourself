@@ -32,12 +32,15 @@ $(document).ready(function() {
   }
 
   function geolocationError(error) {
-    console.log("There was an error :( ");
+    console.log("There was an error :( ", error);
   }
 
-  if ("geolocation" in navigator) {
-    navigator.geolocation.getCurrentPosition(geolocationSuccess, geolocationError);
-  } else {
-    alert("Get a better browser!");
-  }
+  $('#current-location').click(function(event){
+    event.preventDefault();
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(geolocationSuccess, geolocationError);
+    } else {
+      alert("Get a better browser!");
+    }
+  });
 });
