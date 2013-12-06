@@ -1,0 +1,9 @@
+<% @restaurants.each do |restaurant| %>
+  <section class="restaurant">
+    <%= link_to restaurant.name, restaurant %>
+    <% if restaurant.category %>
+      <p class="category">Category: <strong><%= restaurant.category.name %></strong></p>
+    <% end %>
+    <p class="desc"><%= shorten(restaurant.description) %></p>
+  </section>
+<% end %>

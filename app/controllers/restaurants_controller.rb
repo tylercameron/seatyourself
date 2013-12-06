@@ -1,7 +1,11 @@
 class RestaurantsController < ApplicationController
 
   def index
-    @restaurants = Restaurant.all
+    @restaurants = if params[:search]
+      Restaurant.near(params[:search])
+    else
+      Restaurant.all
+    end
   end
 
   def show
