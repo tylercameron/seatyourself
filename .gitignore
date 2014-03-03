@@ -16,3 +16,6 @@
 
 # Ignore Aptana project files.
 .project
+
+# Ignore application configuration
+/config/application.yml

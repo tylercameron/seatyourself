@@ -1,4 +1,4 @@
-<%= button_tag "Find restaurants near me", id: 'current-location' %>
+<%= button_tag "Find restaurants near me", id: "current_location" %>
 
 <p>OR</p>
 
@@ -10,10 +10,21 @@
 
 <h3>All restaurants</h3>
 
+<div id="map-canvas"></div>
+
 <section id="restaurants" style="clear:both">
   <%= render :partial => 'restaurants' %>
 </section>
 
 <% if current_user %>
   <p style="margin-top:3em"><%= link_to 'Add Restaurant', new_restaurant_path %></p>
+<% end %>
+
+
+<%= javascript_tag do %>
+  window.latitude = <%= @restaurants.first.latitude.to_f %>;
+  window.longitude = <%= @restaurants.first.longitude.to_f %>;
+  window.showMarker = false;
+
+  window.coords = <%= raw @restaurants.map {|r| {latitude: r.latitude.to_f, longitude: r.longitude.to_f}}.to_json %>;
 <% end %>

@@ -12,8 +12,8 @@
  *= require_tree .
  */
 
-body { 
-  margin: 0; 
+body {
+  margin: 0;
   font-family: sans-serif;
 }
 
@@ -137,4 +137,9 @@ section.restaurant-details h3 {
 
 .clear {
   clear: both;
+}
+
+#map-canvas {
+  height: 500px;
+  width: 700px;
 }

@@ -8,6 +8,8 @@
     <p><strong>Category: </strong><%= @restaurant.category.name %></p>
   <% end %>
 
+  <div id="map-canvas"></div>
+
   <div class="clear"></div>
 </section>
 
@@ -39,4 +41,13 @@
     <li><%= "#{nr.name}, #{nr.distance}" %></li>
   <% end %>
   </ul>
+<% end %>
+
+
+<%= javascript_tag do %>
+  window.latitude = <%= @restaurant.latitude.to_f %>;
+  window.longitude = <%= @restaurant.longitude.to_f %>;
+  window.showMarker = true;
+
+  window.coords = <%= raw @nearby_restaurants.map {|r| {latitude: r.latitude.to_f, longitude: r.longitude.to_f}}.to_json %>;
 <% end %>

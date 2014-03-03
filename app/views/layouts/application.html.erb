@@ -3,6 +3,7 @@
 <head>
   <title>Seat Yourself</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "http://maps.googleapis.com/maps/api/js?key=#{Figaro.env.google_maps_api}&sensor=false" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
@@ -22,13 +23,13 @@
       <% if current_user %>
       You are signed in as <%= current_user.name %>.
       <%= link_to "Sign out", session_path("current"), method: :delete %>
-      <% else %> 
+      <% else %>
       <li><%= link_to "Sign up", new_user_path %></li>
       <li><%= link_to "Sign in", new_session_path %></li>
       <% end %>
     </ul>
   </section>
-  
+
   <section id="content">
 
     <% if flash[:alert] %>
