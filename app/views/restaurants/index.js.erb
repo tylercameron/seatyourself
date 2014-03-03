@@ -1,1 +1,11 @@
 $('#restaurants').html("<%= j render(:partial => 'restaurants') %>");
+
+if ($('#map-canvas').length > 0) {
+  window.longitude = <%= params[:longitude] %>;
+  window.latitude =  <%= params[:latitude] %>;
+  window.showMarker = true;
+  initializeMap();
+
+  window.coords = <%= raw @restaurants.map {|r| {latitude: r.latitude.to_f, longitude: r.longitude.to_f}}.to_json %>;
+  if (coords.length > 0) addMarkers(coords);
+}
