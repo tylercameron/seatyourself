@@ -20,3 +20,5 @@ group :test, :development do
   gem 'assert_difference' # using within rspec
   gem 'pry'
 end
+
+gem 'unicorn'
