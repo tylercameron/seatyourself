@@ -24,3 +24,6 @@ require 'capistrano/deploy'
 
 # Loads custom tasks from `lib/capistrano/tasks' if you have any defined.
 Dir.glob('lib/capistrano/tasks/*.cap').each { |r| import r }
+
+# Loads custom ruby files in lib/capistrano
+Dir.glob('lib/capistrano/**/*.rb').each { |r| import r }
