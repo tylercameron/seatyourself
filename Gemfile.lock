@@ -87,6 +87,7 @@ GEM
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (2.8.0)
+    pg (0.17.1)
     polyglot (0.3.3)
     pry (0.9.12.3)
       coderay (~> 1.0)
@@ -176,6 +177,7 @@ DEPENDENCIES
   geocoder
   haml-rails
   jquery-rails
+  pg
   pry
   rails (= 4.0.1)
   rspec-rails
