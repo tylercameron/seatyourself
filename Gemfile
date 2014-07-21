@@ -9,6 +9,7 @@ gem 'sass-rails'
 gem 'coffee-rails'
 gem 'haml-rails'
 gem 'uglifier'
+gem 'geocoder'
 
 group :test, :development do
   gem 'factory_girl_rails'
