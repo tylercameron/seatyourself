@@ -11,15 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141209163101) do
-
-  create_table "authentications", force: :cascade do |t|
-    t.integer  "user_id",                null: false
-    t.string   "provider",   limit: 255, null: false
-    t.string   "uid",        limit: 255, null: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 20140721012246) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
@@ -47,9 +39,11 @@ ActiveRecord::Schema.define(version: 20141209163101) do
     t.string   "picture"
     t.text     "description"
     t.integer  "category_id"
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
-    t.integer  "capacity",    default: 100
+    t.datetime "created_at",                                        null: false
+    t.datetime "updated_at",                                        null: false
+    t.integer  "capacity",                            default: 100
+    t.decimal  "longitude",   precision: 9, scale: 6
+    t.decimal  "latitude",    precision: 9, scale: 6
   end
 
   add_index "restaurants", ["category_id"], name: "index_restaurants_on_category_id"

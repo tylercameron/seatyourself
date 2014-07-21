@@ -1,9 +1,11 @@
 class Restaurant < ActiveRecord::Base
-
   validates :name, :presence => true
 
   belongs_to :category # not actually being used yet
   has_many :reservations
+
+  geocoded_by :address
+  after_validation :geocode, if: :address_changed?
 
   # These methods return the opening and closing hours for a restaurant
   # A possible new feature would be to make these additional columns so that each restaurant could have its own hours
