@@ -1,3 +1,5 @@
+<%= button_tag "Find restaurants near me", id: 'current-location' %>
+<p>OR</p>
 <%= form_tag restaurants_path, method: :get, remote: true do %>
   <%= label_tag :search, 'Find restaurants by address or postal code' %>
   <%= text_field_tag :search %>
