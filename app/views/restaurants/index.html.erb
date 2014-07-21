@@ -1,18 +1,13 @@
+<%= form_tag restaurants_path, method: :get do %>
+  <%= label_tag :search, 'Find restaurants by address or postal code' %>
+  <%= text_field_tag :search %>
+  <%= submit_tag "Submit" %>
+<% end %>
+
 <h3>All restaurants</h3>
 
-<section style="clear:both">
-<% @restaurants.each do |restaurant| %>
-
-  <section class="restaurant">
-    <%= image_tag "http://farm4.staticflickr.com/3027/2896972929_d55c6d30de_s.jpg" %>
-    <%= link_to restaurant.name, restaurant %>
-    <% if restaurant.category %>
-      <p class="category">Category: <strong><%= restaurant.category.name %></strong></p>
-    <% end %>
-    <p class="desc"><%= shorten(restaurant.description) %></p>
-  </section>
-
-<% end %>
+<section id="restaurants" style="clear:both">
+  <%= render @restaurants %>
 </section>
 
 <% if current_user %>
