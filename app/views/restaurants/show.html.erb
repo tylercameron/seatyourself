@@ -1,6 +1,4 @@
 <section class="restaurant-details">
-  <%= image_tag "http://farm4.staticflickr.com/3027/2896972929_d55c6d30de.jpg" %>
-
   <h3><%= @restaurant.name %></h3>
 
   <p><strong>Address: </strong><%= @restaurant.address %></p>
@@ -32,4 +30,13 @@
     </div>
     <%= f.submit %>
   <% end %>
+<% end %>
+
+<% if @nearby_restaurants.any? %>
+  <h2>Nearby restaurants</h2>
+  <ul>
+  <% @nearby_restaurants.each do |nr| %>
+    <li><%= "#{nr.name}, #{nr.distance}" %></li>
+  <% end %>
+  </ul>
 <% end %>
