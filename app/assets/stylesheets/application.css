@@ -138,3 +138,8 @@ section.restaurant-details h3 {
 .clear {
   clear: both;
 }
+
+#map-canvas {
+  height: 500px;
+  width: 700px;
+}
