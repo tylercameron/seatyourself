@@ -1,4 +1,5 @@
 var Map = {};
+Map.markers = [];
 
 function initializeMap() {
   Map.options = {
@@ -13,6 +14,8 @@ function initializeMap() {
       position: new google.maps.LatLng(Map.latitude, Map.longitude),
       map: Map.canvas
     });
+
+    Map.markers.push(myMarker);
   }
 }
 
@@ -25,6 +28,7 @@ function addMarkers(coords) {
         map: Map.canvas,
         icon: image
     });
+    Map.markers.push(myMarker);
   });
 }
 
