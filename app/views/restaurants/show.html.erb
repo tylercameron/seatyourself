@@ -42,3 +42,9 @@
   <% end %>
   </ul>
 <% end %>
+
+<%= javascript_tag do %>
+  Map.latitude = <%= @restaurant.latitude.to_f %>;
+  Map.longitude = <%= @restaurant.longitude.to_f %>;
+  Map.showMarkers = true;
+<% end %>

@@ -1,9 +1,5 @@
 var Map = {};
 
-Map.latitude = 43.6425662;
-Map.longitude = -79.3870568;
-Map.showMarkers = true;
-
 function initializeMap() {
   Map.options = {
     zoom: 14,
