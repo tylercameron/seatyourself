@@ -1,3 +1,17 @@
+var Map = {};
+
+Map.latitude = 43.6425662;
+Map.longitude = -79.3870568;
+
+function initializeMap() {
+  Map.options = {
+    zoom: 14,
+    center: new google.maps.LatLng(Map.latitude, Map.longitude),
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  Map.canvas = new google.maps.Map($('#map-canvas')[0], Map.options);
+
+}
 function geolocationSuccess(position){
   var latitude = position.coords.latitude;
   var longitude = position.coords.longitude;
