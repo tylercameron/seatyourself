@@ -2,6 +2,7 @@ var Map = {};
 
 Map.latitude = 43.6425662;
 Map.longitude = -79.3870568;
+Map.showMarkers = true;
 
 function initializeMap() {
   Map.options = {
@@ -11,7 +12,14 @@ function initializeMap() {
   };
   Map.canvas = new google.maps.Map($('#map-canvas')[0], Map.options);
 
+  if (Map.showMarkers) {
+    var myMarker = new google.maps.Marker({
+      position: new google.maps.LatLng(Map.latitude, Map.longitude),
+      map: Map.canvas
+    });
+  }
 }
+
 function geolocationSuccess(position){
   var latitude = position.coords.latitude;
   var longitude = position.coords.longitude;
@@ -44,4 +52,6 @@ $(document).on('ready page:load', function() {
       alert("Get a better browser!");
     }
   });
+
+  if ($('#map-canvas').length) initializeMap();
 });
