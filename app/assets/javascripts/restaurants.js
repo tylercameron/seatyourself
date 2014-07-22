@@ -2,7 +2,7 @@ var Map = {};
 
 function initializeMap() {
   Map.options = {
-    zoom: 14,
+    zoom: 15,
     center: new google.maps.LatLng(Map.latitude, Map.longitude),
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
@@ -14,6 +14,18 @@ function initializeMap() {
       map: Map.canvas
     });
   }
+}
+
+function addMarkers(coords) {
+  var image = 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png';
+
+  coords.forEach(function(coord){
+    var myMarker = new google.maps.Marker({
+        position: new google.maps.LatLng(coord.latitude, coord.longitude),
+        map: Map.canvas,
+        icon: image
+    });
+  });
 }
 
 function geolocationSuccess(position){
@@ -49,5 +61,8 @@ $(document).on('ready page:load', function() {
     }
   });
 
-  if ($('#map-canvas').length) initializeMap();
+  if ($('#map-canvas').length) {
+    initializeMap();
+    if (Map.coords.length > 0) addMarkers(Map.coords);
+  }
 });
