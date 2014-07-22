@@ -10,6 +10,7 @@ gem 'coffee-rails'
 gem 'haml-rails'
 gem 'uglifier'
 gem 'geocoder'
+gem 'figaro'
 
 group :test, :development do
   gem 'factory_girl_rails'
