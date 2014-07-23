@@ -6,6 +6,8 @@
   <%= submit_tag "Submit" %>
 <% end %>
 
+<div id="map-canvas"></div>
+
 <h3>All restaurants</h3>
 
 <section id="restaurants" style="clear:both">
@@ -14,4 +16,12 @@
 
 <% if current_user %>
   <p style="margin-top:3em"><%= link_to 'Add Restaurant', new_restaurant_path %></p>
+<% end %>
+
+<%= javascript_tag do %>
+  Map.latitude = <%= @restaurants.first.latitude.to_f %>;
+  Map.longitude = <%= @restaurants.first.longitude.to_f %>;
+  Map.showCenterMarker = false;
+  Map.coords = <%= raw @restaurants.map {|r| {latitude: r.latitude.to_f, longitude: r.longitude.to_f}}.to_json %>;
+
 <% end %>

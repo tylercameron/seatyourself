@@ -46,6 +46,6 @@
 <%= javascript_tag do %>
   Map.latitude = <%= @restaurant.latitude.to_f %>;
   Map.longitude = <%= @restaurant.longitude.to_f %>;
-  Map.showMarkers = true;
+  Map.showCenterMarker = true;
   Map.coords = <%= raw @nearby_restaurants.map {|r| {latitude: r.latitude.to_f, longitude: r.longitude.to_f}}.to_json %>;
 <% end %>

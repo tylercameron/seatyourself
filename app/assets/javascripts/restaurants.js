@@ -9,7 +9,7 @@ function initializeMap() {
   };
   Map.canvas = new google.maps.Map($('#map-canvas')[0], Map.options);
 
-  if (Map.showMarkers) {
+  if (Map.showCenterMarker) {
     var myMarker = new google.maps.Marker({
       position: new google.maps.LatLng(Map.latitude, Map.longitude),
       map: Map.canvas
