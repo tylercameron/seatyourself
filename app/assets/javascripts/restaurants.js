@@ -1,7 +1,7 @@
 var Map = {};
 Map.markers = [];
 
-function initializeMap() {
+Map.initialize = function() {
   Map.options = {
     zoom: 15,
     center: new google.maps.LatLng(Map.latitude, Map.longitude),
@@ -17,9 +17,9 @@ function initializeMap() {
 
     Map.markers.push(myMarker);
   }
-}
+};
 
-function addMarkers(coords) {
+Map.addMarkers = function(coords) {
   var image = 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png';
 
   coords.forEach(function(coord){
@@ -30,14 +30,14 @@ function addMarkers(coords) {
     });
     Map.markers.push(myMarker);
   });
-}
+};
 
-function clearMarkers() {
+Map.clearMarkers = function() {
   Map.markers.forEach(function(marker) {
     marker.setMap(null);
   });
   Map.markers = [];
-}
+};
 
 function geolocationSuccess(position){
   var latitude = position.coords.latitude;
@@ -73,7 +73,7 @@ $(document).on('ready page:load', function() {
   });
 
   if ($('#map-canvas').length) {
-    initializeMap();
-    if (Map.coords.length > 0) addMarkers(Map.coords);
+    Map.initialize();
+    if (Map.coords.length > 0) Map.addMarkers(Map.coords);
   }
 });
