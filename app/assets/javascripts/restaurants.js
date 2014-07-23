@@ -32,6 +32,13 @@ function addMarkers(coords) {
   });
 }
 
+function clearMarkers() {
+  Map.markers.forEach(function(marker) {
+    marker.setMap(null);
+  });
+  Map.markers = [];
+}
+
 function geolocationSuccess(position){
   var latitude = position.coords.latitude;
   var longitude = position.coords.longitude;

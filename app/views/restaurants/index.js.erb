@@ -1,1 +1,4 @@
 $('#restaurants').html('<%= j render(@restaurants) %>');
+var coords = <%= raw @restaurants.map {|r| {latitude: r.latitude.to_f, longitude: r.longitude.to_f}}.to_json %>;
+clearMarkers();
+addMarkers(coords);
