@@ -70,7 +70,7 @@ Rails.application.config.sorcery.configure do |config|
   # What providers are supported by this app, i.e. [:twitter, :facebook, :github, :linkedin, :xing, :google, :liveid] .
   # Default: `[]`
   #
-  # config.external_providers =
+  config.external_providers = [:github]
 
 
   # You can change it by your local ca_file. i.e. '/etc/pki/tls/certs/ca-bundle.crt'
@@ -114,12 +114,12 @@ Rails.application.config.sorcery.configure do |config|
   # config.facebook.callback_url = "http://0.0.0.0:3000/oauth/callback?provider=facebook"
   # config.facebook.user_info_mapping = {:email => "name"}
   # config.facebook.access_permissions = ["email", "publish_stream"]
-  #
-  # config.github.key = ""
-  # config.github.secret = ""
-  # config.github.callback_url = "http://0.0.0.0:3000/oauth/callback?provider=github"
-  # config.github.user_info_mapping = {:email => "name"}
-  #
+
+  config.github.key = Figaro.env.github_key
+  config.github.secret = Figaro.env.github_secret
+  config.github.callback_url = "http://localhost:3000/oauth/callback?provider=github"
+  config.github.user_info_mapping = {email: "email", name: "name"}
+
   # config.google.key = ""
   # config.google.secret = ""
   # config.google.callback_url = "http://0.0.0.0:3000/oauth/callback?provider=google"
