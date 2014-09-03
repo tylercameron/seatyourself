@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe UsersController do
 
@@ -7,27 +7,27 @@ describe UsersController do
 	render_views
 
 	it "shows validation errors when password not provided" do
-	    params = {
-	      name: "Example",
-	      email: "example@example.org",
-	      password: "",
-	      password_confirmation: ""
-	    }
-	    post :create, user: params
+    params = {
+      name: "Example",
+      email: "example@example.org",
+      password: "",
+      password_confirmation: ""
+    }
+    post :create, user: params
+
 		expect(response.status).to eq(200)
 		expect(response.body).to match 'Password can&#39;t be blank'
 	end
 
 	it "creates a user" do
-	    params = {
-	      name: "Sample Diner",
-	      email: "sample@example.org",
-	      password: "def456",
-	      password_confirmation: "def456"
-	    }
-	    assert_difference('User.count', 1) do
-	    	post :create, user: params
-		end
+    params = {
+      name: "Sample Diner",
+      email: "sample@example.org",
+      password: "def456",
+      password_confirmation: "def456"
+    }
+
+	  expect{post :create, user: params}.to change{User.count}.by(1)
 		expect(response).to redirect_to root_path
 	end
 

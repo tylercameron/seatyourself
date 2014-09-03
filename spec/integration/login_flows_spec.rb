@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe "login flows" do
 
@@ -22,12 +22,12 @@ describe "login flows" do
       :name => "Diner Two",
       :email => "dinertwo@example.org",
       :password => "def456",
-      :password_confirmation => "def456" 
+      :password_confirmation => "def456"
     }
     post_via_redirect '/users', { :user => user }
     assert_equal '/', path
     assert_select '#login a', "Sign out"
     assert_equal 'Welcome Diner Two!', flash[:notice]
-  end 
+  end
 
 end

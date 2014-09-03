@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe Restaurant do
 	let!(:restaurant) { Restaurant.create }

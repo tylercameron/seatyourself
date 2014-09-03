@@ -1,4 +1,4 @@
-require 'spec_helper'
+require 'rails_helper'
 
 describe HomeController do
 
@@ -20,7 +20,7 @@ describe HomeController do
 	    # See http://guides.rubyonrails.org/testing.html
 	    get :home, {}, { :user_id => 1 }
 		expect(response.status).to eq(200)
-		expect(response.body).to match 'Sign out'			
+		expect(response.body).to match 'Sign out'
 	end
 
 end
