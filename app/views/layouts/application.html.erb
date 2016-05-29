@@ -1,47 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Seat Yourself</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+  <title>Seatyourself</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <h1><%= link_to "Seat Yourself", root_path %></h1>
-  <nav>
-    <ul>
-      <li><%= link_to "Restaurants", restaurants_path %></li>
-      <% if current_user %>
-        <li><%= link_to "My Reservations", current_user %></li>
-      <% end %>
-    </ul>
-  </nav>
 
-  <section id="login">
-    <ul>
-      <% if current_user %>
-      You are signed in as <%= current_user.name %>.
-      <%= link_to "Sign out", session_path("current"), method: :delete %>
-      <% else %> 
-      <li><%= link_to "Sign up", new_user_path %></li>
-      <li><%= link_to "Sign in", new_session_path %></li>
-      <% end %>
-    </ul>
-  </section>
-  
-  <section id="content">
-
-    <% if flash[:alert] %>
-      <section id="alert"><%= flash[:alert] %></section>
-    <% end %>
-
-    <% if flash[:notice] %>
-      <section id="notice"><%= flash[:notice] %></section>
-    <% end %>
-
-    <%= yield %>
-
-  </section>
+<%= yield %>
 
 </body>
 </html>
