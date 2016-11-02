@@ -16,3 +16,7 @@
 
 # Ignore Aptana project files.
 .project
+*~
+*.swp
+*.swn
+*.swo
