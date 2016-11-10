@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2016-11-10
+  time: 2016-11-10 15:50:42
+  number_of_seats: 1
+  user_id: 1
+  restaurant_id: 1
+
+two:
+  date: 2016-11-10
+  time: 2016-11-10 15:50:42
+  number_of_seats: 1
+  user_id: 1
+  restaurant_id: 1
