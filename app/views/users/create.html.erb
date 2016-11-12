@@ -1,2 +1,27 @@
 <h1>Users#create</h1>
-<p>Find me in app/views/users/create.html.erb</p>
+
+
+<%= form_for  do |f| %>
+	<p>
+		<%= f.label :name  %><br>
+		<%= f.text_field :name %>
+	</p>
+	<p>
+		<%= f.label :email  %><br>
+		<%= f.email_field :email %>
+	</p>
+	<p>
+		<%= f.label :phone  %><br>
+		<%= f.telephone_field :phone %>
+	</p>
+	<p>
+		<%= f.label :password  %><br>
+		<%= f.password_field :password %>
+	</p>
+	<p>
+		<%= f.label :password_confirmation  %><br>
+		<%= f.password_field :password_confirmation %>
+	</p>
+
+	<%= f.submit 'Sign Up'
+<% end %>
