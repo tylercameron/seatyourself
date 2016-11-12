@@ -1,4 +1,4 @@
-<%= form_for reservation do |f|
+<%= form_for reservation do |f| %>
   <% if @reservation.errors.any? %>
     <div>
       <h2><%= pluralize(@reservation.errors.count, "error")%> Prohibited this product from being saved:</h2>
@@ -11,17 +11,17 @@
     </div>
   <% end %>
 <div class="field">
-  <%= f.label :date %>
-  <%= f.date_field %>
+  <%= f.label "Date:" %>
+  <%= f.text_field :date_of_reservation %>
 </div>
 <div class="field">
-  <%= f.label :time %>
-  <%= f.time_field %>
+  <%= f.label "Time:" %>
+  <%= f.text_field :time_of_reservation %>
 </div>
 
 <div class="field">
-  <%= f.label "Number of People" %>
-  <%= f.text_field %>
+  <%= f.label "Number of People:" %>
+  <%= f.text_field :number_of_seats%>
 </div>
 
 <div class="actions">
