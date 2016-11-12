@@ -1,9 +1,9 @@
 <h1>Yo Reservation</h1>
 
 <% @reservations.each do |reservation| %>
-<p><%= @reservation.date %>
-   <%= @reservation.time %>
-   <%= @reservation.number_of_seats %>
+<p><%= reservation.date %>
+   <%= reservation.time %>
+   <%= reservation.number_of_seats %>
 </p>
 
 <% end%>

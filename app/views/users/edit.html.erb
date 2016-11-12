@@ -1,2 +1,7 @@
-<h1>Users#update</h1>
-<p>Find me in app/views/users/update.html.erb</p>
+<h1>Edit Yo User</h1>
+
+<%= render 'form', user: @user %>
+
+<%= link_to "#{@user.name} page", user_path(@user) %>
+
+<%= link_to 'Restaurants', restaurants_path %>
