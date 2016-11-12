@@ -4,3 +4,7 @@
 	<h4>Email: <%= @user.email %></h4>
 	<h4>Phone: <%= @user.phone %></h4>
 </div>
+
+<%= link_to 'Edit Yo Self', edit_user_path(@user) %>
+
+<%= link_to 'Restaurants', restaurants_path %>
