@@ -3,10 +3,10 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = User.find_by(email_params[:email])
-    if user && user.authenticate(params [:password])
+    user = User.find_by(email: params[:session][:email])
+    if user && user.authenticate(params[:session] [:password])
       session [:user_id] == user.id
-      redirect_to reservations_url, notice: "Logged in!"
+      redirect_to reservation_url, notice: "Logged in!"
     else
       flash.now[:alert] = "Invalid email or password"
       render "new"
