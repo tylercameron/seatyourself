@@ -7,8 +7,10 @@ class UsersController < ApplicationController
 	def create
 		@user = User.new(user_params)
 		if @user.save
-			redirect_to Reservations_url, notice: "Yo signed up!"
+			flash[:notice] = "Yo signed up!"
+			redirect_to reservations_url
 		else
+			flash[:notice] = "Try again yo!"
 			render "new"
 		end
 	end
@@ -25,8 +27,10 @@ class UsersController < ApplicationController
 		@user = User.find(params[:id])
 
 		if @user.update_attributes(user_params)
+			flash[:notice] = "Yo up to date!"
 			redirect_to user_url(@user)
 		else
+			flash[:notice] = "Try again yo!"
 			render :edit
 		end
 	end
