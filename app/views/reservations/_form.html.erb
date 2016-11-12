@@ -1,4 +1,4 @@
-<%= form_for reservation do |f| %>
+<%= form_for @reservation do |f| %>
   <% if @reservation.errors.any? %>
     <div>
       <h2><%= pluralize(@reservation.errors.count, "error")%> Prohibited this product from being saved:</h2>
