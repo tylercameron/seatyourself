@@ -21,6 +21,10 @@ class ReservationsController < ApplicationController
 			end
 	end
 
+	def edit
+		@reservation = Reservation.find(params[:id])
+	end
+
 	def update
 		@reservation = Reservation.find(params[:id])
 
@@ -39,6 +43,6 @@ class ReservationsController < ApplicationController
 
 	private
 	def reservation_params
-		params.require(:reservation).permit(:date, :time, :number_of_seats)
+		params.require(:reservation).permit(:date_of_reservation, :time_of_reservation, :number_of_seats)
 	end
 end
