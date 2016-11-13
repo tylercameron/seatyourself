@@ -1,5 +1,5 @@
 class Reservation < ApplicationRecord
-  validates :date, :time, :number_of_seats, presence: true
+  validates :date_of_reservation, :time_of_reservation, :number_of_seats, presence: true
   validates :number_of_seats, numericality: {only_integer: true}
 
   belongs_to :user

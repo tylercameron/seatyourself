@@ -1,2 +1,10 @@
-<h1>Reservations#show</h1>
-<p>Find me in app/views/reservations/show.html.erb</p>
+<h1>Yo Reservation</h1>
+
+
+<%= link_to "Back to Reservations", reservations_url %> | <%= link_to "Edit", edit_reservation_path(@reservation) %> | <%= link_to "Delete", @reservation, method: :delete, data: {confirm: "Are you sure you want to delete this reservation?"}  %>
+
+
+<p><%= @reservation.date_of_reservation %> <br>
+   <%= @reservation.time_of_reservation %><br>
+   <%= @reservation.number_of_seats %>
+</p>
