@@ -1,2 +1,13 @@
-<h1>Restaurants#show</h1>
-<p>Find me in app/views/restaurants/show.html.erb</p>
+<%= link_to "Back to Restaurants", restaurants_url %>
+
+<p><%= @restaurant.name %>, <%= @restaurant.cuisine %> </p>
+  <p> <%= @restaurant.price %></p>
+  <p> <%= @restaurant.description %></p>
+
+
+<p><%= @restaurant.street_address %>, <%= @restaurant.neighbourhood %></p>
+<p><%= @restaurant.phone %></p>
+
+
+
+<%= link_to "Resturants index", restaurants_path %> | <%= link_to "Edit", edit_restaurant_path(@restaurant) %> | <%= link_to "Delete", @restaurant, method: :delete, data: {confirm: "Are you sure you want to delete this product?"}  %>
