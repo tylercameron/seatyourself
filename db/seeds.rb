@@ -8,12 +8,12 @@
 
 Restaurant.create(
   name: 'Figo',
-  description: 'FIGO offers Italian inspired cuisine in a stylishly elegant setting. Using the freshest and finest ingredients, Executive Chef Anna Chen brings her own distinctive take on Italian cuisine using contemporary techniques. The menu features house-made ricotta, wood-fired pizzas, and made-from-scratch pastas. At FIGO, our approach is simple; source the best ingredients possible and prepare them in an uncomplicated and modern way.'
+  description: 'FIGO offers Italian inspired cuisine in a stylishly elegant setting. Using the freshest and finest ingredients, Executive Chef Anna Chen brings her own distinctive take on Italian cuisine using contemporary techniques. The menu features house-made ricotta, wood-fired pizzas, and made-from-scratch pastas. At FIGO, our approach is simple; source the best ingredients possible and prepare them in an uncomplicated and modern way.',
   cuisine: 'Italian',
   price: '$$$$',
   street_address: '295 Adelaide Street W.',
   neighbourhood: 'Entertainment District',
-  phone: '(647) 748 3446'
+  phone: 7483446
 )
 
 Restaurant.create(
@@ -23,17 +23,17 @@ Restaurant.create(
   price: '$$',
   street_address: '504 Adelaide St W',
   neighbourhood: 'Entertainment District',
-  phone: '(416) 777 2800'
+  phone: 7772800
 )
 
 Restaurant.create(
   name: 'Maman',
-  description: "Maman serves family-inspired recipes, bringing to life childhood favourites, both savoury and sweet, from the South of France and North America. The dishes focus on the highese quality, locally sourced ingredients and highlight Chef Arnal's classic French technique."
+  description: "Maman serves family-inspired recipes, bringing to life childhood favourites, both savoury and sweet, from the South of France and North America. The dishes focus on the highese quality, locally sourced ingredients and highlight Chef Arnal's classic French technique.",
   cuisine: 'French',
   price: '$$',
   street_address: '1 First Canadian Place',
   neighbourhood: 'Financial District',
-  phone: '(416) 216 6767'
+  phone: 2166767
 )
 
 Restaurant.create(
@@ -43,7 +43,7 @@ Restaurant.create(
   price: '$$',
   street_address: '60 Sudbury St.',
   neighbourhood: 'Liberty Village',
-  phone: '(416) 585 2525'
+  phone: 5852525
 )
 
 Restaurant.create(
@@ -53,7 +53,7 @@ Restaurant.create(
   price: '$',
   street_address: '2 Lakeview Ave',
   neighbourhood: 'Dundas West',
-  phone: '(888) 888 8888'
+  phone: 8888888
 )
 
 Restaurant.create(
@@ -63,7 +63,7 @@ Restaurant.create(
   price: '$$',
   street_address: '974 College St.',
   neighbourhood: 'Downtown',
-  phone: '(647) 748 4777'
+  phone: 7484777
 )
 
 Restaurant.create(
@@ -73,7 +73,7 @@ Restaurant.create(
   price: '$$$',
   street_address: '2766 Dundas W',
   neighbourhood: 'Dundas West',
-  phone: '(416) 604 9992'
+  phone: 6049992
 )
 
 Restaurant.create(
@@ -83,7 +83,7 @@ Restaurant.create(
   price: '$$',
   street_address: '1265 Queen Street West',
   neighbourhood: 'Parkdale',
-  phone: '(416) 537 1265'
+  phone: 5371265
 )
 
 Restaurant.create(
@@ -93,7 +93,7 @@ Restaurant.create(
   price: '$$',
   street_address: '5421 Yonge St',
   neighbourhood: 'Downtown',
-  phone: '(647) 345 1155'
+  phone: 3451155
 )
 
 Restaurant.create(
@@ -103,5 +103,5 @@ Restaurant.create(
   price: '$$',
   street_address: '1198 Queen Street West',
   neighbourhood: 'Queen Street West',
-  phone: '(647) 464 9100 '
+  phone: 4649100
 )

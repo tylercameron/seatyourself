@@ -1,12 +1,11 @@
-
 <h1>Yo Reservations</h1>
 
 <%= link_to "Add a Reservation", new_reservation_path %>
 
 <% @reservations.each do |reservation| %>
 
-<p>  <%= link_to reservation.date_of_reservation, reservation_path(reservation) %> <br>
-   <%= reservation.time_of_reservation %><br>
-   <%= reservation.number_of_seats %>
-</p>
+<p>Date: <%= link_to reservation.date_of_reservation, reservation_path(reservation) %></p>
+<p>Time: <%= reservation.time_of_reservation %></p>
+<p>Seats: <%= reservation.number_of_seats %></p>
+
 <% end %>

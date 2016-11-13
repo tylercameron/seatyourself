@@ -1,10 +1,10 @@
-<h1><%= @user.name %> info page</h1>
+<%= link_to 'Back to Restaurants', restaurants_path %>
+
+<h2><%= @user.name %>'s Profile</h2>
 
 <div class="location">
-	<h4>Email: <%= @user.email %></h4>
-	<h4>Phone: <%= @user.phone %></h4>
+  <h4>Email: <%= @user.email %></h4>
+  <h4>Phone: <%= @user.phone %></h4>
 </div>
 
 <%= link_to 'Edit Yo Self', edit_user_path(@user) %>
-
-<%= link_to 'Restaurants', restaurants_path %>
