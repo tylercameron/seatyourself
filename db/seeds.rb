@@ -7,101 +7,101 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Restaurant.create(
-  name: 'yums',
-  description: 'delish',
-  cuisine: 'vietnamese',
-  price: '$',
-  street_address: 'bitmaker',
-  neighbourhood: 'chinatown',
-  phone: '8888888'
+  name: 'Figo',
+  description: 'FIGO offers Italian inspired cuisine in a stylishly elegant setting. Using the freshest and finest ingredients, Executive Chef Anna Chen brings her own distinctive take on Italian cuisine using contemporary techniques. The menu features house-made ricotta, wood-fired pizzas, and made-from-scratch pastas. At FIGO, our approach is simple; source the best ingredients possible and prepare them in an uncomplicated and modern way.'
+  cuisine: 'Italian',
+  price: '$$$$',
+  street_address: '295 Adelaide Street W.',
+  neighbourhood: 'Entertainment District',
+  phone: '(647) 748 3446'
 )
 
 Restaurant.create(
-  name: 'noms',
-  description: 'fantastic',
-  cuisine: 'italian',
+  name: 'Campechano Taqueria',
+  description: 'Owners Raena Fisher and Daniel Roe hail from Toronto favorites the Black Hoof and La Carnita.',
+  cuisine: 'Mexican',
   price: '$$',
-  street_address: 'the path',
-  neighbourhood: 'downtown',
-  phone: '7777777'
+  street_address: '504 Adelaide St W',
+  neighbourhood: 'Entertainment District',
+  phone: '(416) 777 2800'
 )
 
 Restaurant.create(
-  name: 'foods',
-  description: 'fancy',
-  cuisine: 'japanese',
-  price: '$$$$$',
-  street_address: 'queen st',
-  neighbourhood: 'queen',
-  phone: '1111111'
+  name: 'Maman',
+  description: "Maman serves family-inspired recipes, bringing to life childhood favourites, both savoury and sweet, from the South of France and North America. The dishes focus on the highese quality, locally sourced ingredients and highlight Chef Arnal's classic French technique."
+  cuisine: 'French',
+  price: '$$',
+  street_address: '1 First Canadian Place',
+  neighbourhood: 'Financial District',
+  phone: '(416) 216 6767'
 )
 
 Restaurant.create(
-  name: '',
-  description: '',
-  cuisine: '',
-  price: '',
-  street_address: '',
-  neighbourhood: '',
-  phone: ''
+  name: 'Recess',
+  description: 'From the creators of Old School, Recess is a 24 hour diner with a lengthy, delicious breakfast menu.',
+  cuisine: 'American',
+  price: '$$',
+  street_address: '60 Sudbury St.',
+  neighbourhood: 'Liberty Village',
+  phone: '(416) 585 2525'
 )
 
 Restaurant.create(
-  name: '',
-  description: '',
-  cuisine: '',
-  price: '',
-  street_address: '',
-  neighbourhood: '',
-  phone: ''
+  name: 'Hanmoto',
+  description: 'Japanese-style snacks & drinks are served at this bare-bones izakaya with flea market decor.',
+  cuisine: 'Japanese',
+  price: '$',
+  street_address: '2 Lakeview Ave',
+  neighbourhood: 'Dundas West',
+  phone: '(888) 888 8888'
 )
 
 Restaurant.create(
-  name: '',
-  description: '',
-  cuisine: '',
-  price: '',
-  street_address: '',
-  neighbourhood: '',
-  phone: ''
+  name: 'Cafeteria',
+  description: 'Decorated with quirky vintage finds, this hip outpost serves creative Mexican dishes plus cocktails.',
+  cuisine: 'Mexican',
+  price: '$$',
+  street_address: '974 College St.',
+  neighbourhood: 'Downtown',
+  phone: '(647) 748 4777'
 )
 
 Restaurant.create(
-  name: '',
-  description: '',
-  cuisine: '',
-  price: '',
-  street_address: '',
-  neighbourhood: '',
-  phone: ''
+  name: 'Honest Weight',
+  description: 'Even if you don’t hang out in the Junction, there’s a good chance you’ve had Honest Weight’s seafood before. In the year and a half since it opened, John Bil and Victoria Bazan’s eatery/fishmonger’s has begun supplying local restaurants (including Chabrol and Ufficio) with responsibly sourced seafood.',
+  cuisine: 'Seafood',
+  price: '$$$',
+  street_address: '2766 Dundas W',
+  neighbourhood: 'Dundas West',
+  phone: '(416) 604 9992'
 )
 
 Restaurant.create(
-  name: '',
-  description: '',
-  cuisine: '',
-  price: '',
-  street_address: '',
-  neighbourhood: '',
-  phone: ''
+  name: 'Commodore',
+  description: 'Under an elegant curved ceiling that (subtly) evokes a ship’s hull, festooned with round glowing lights that (subtly) recall massive barnacles, diners can dive into a menu of carefully considered, labour-intensive dishes that, naturally, put seafood front and centre.',
+  cuisine: 'Seafood',
+  price: '$$',
+  street_address: '1265 Queen Street West',
+  neighbourhood: 'Parkdale',
+  phone: '(416) 537 1265'
 )
 
 Restaurant.create(
-  name: '',
-  description: '',
-  cuisine: '',
-  price: '',
-  street_address: '',
-  neighbourhood: '',
-  phone: ''
+  name: 'Artisan Noodle',
+  description: 'Artisan Noodle is where those in the know go for Shaanxi-style (Northwestern) Chinese cuisine in North York including authentic versions of the noodles and buns the cuisine is well-known for.',
+  cuisine: 'Chinese',
+  price: '$$',
+  street_address: '5421 Yonge St',
+  neighbourhood: 'Downtown',
+  phone: '(647) 345 1155'
 )
 
 Restaurant.create(
-  name: '',
-  description: '',
-  cuisine: '',
-  price: '',
-  street_address: '',
-  neighbourhood: '',
-  phone: ''
+  name: 'Dandylion',
+  description: 'A new, “vegetable-forward” spot on Queen Street West from the veteran city chef Jay Carter, feels as though it was conceived as an antidote to the modern restaurant.',
+  cuisine: 'Canadian',
+  price: '$$',
+  street_address: '1198 Queen Street West',
+  neighbourhood: 'Queen Street West',
+  phone: '(647) 464 9100 '
 )
