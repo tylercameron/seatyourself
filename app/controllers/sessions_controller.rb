@@ -3,8 +3,8 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = User.find_by(email: params[:session][:email])
-    if user && user.authenticate(params[:session] [:password])
+    user = User.find_by(email: params[:email])
+    if user && user.authenticate(params [:password])
       session [:user_id] == user.id
       redirect_to reservation_url, notice: "Logged in!"
     else
