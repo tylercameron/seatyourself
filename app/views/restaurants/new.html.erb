@@ -1,35 +1,35 @@
-<h1>Add a Restaurant </h1>
-<%= link_to "Back to Restaurant ", restaurants_path %>
+<h2>Add a Restaurant </h2>
+<%= link_to "Back to Restaurants", restaurants_path %>
 <%= form_for @restaurant  do |f| %>
 <p>
-	<%= f.label :name %><br>
-	<%= f.text_field :name %>
+  <%= f.label :name %><br>
+  <%= f.text_field :name %>
 </p>
 <p>
-	<%= f.label :description %><br>
-	<%= f.text_field :description %>
+  <%= f.label :description %><br>
+  <%= f.text_field :description %>
 </p>
 <p>
-	<%= f.label :cuisine  %><br>
-	<%= f.text_field :cuisine   %>
+  <%= f.label :cuisine  %><br>
+  <%= f.text_field :cuisine   %>
 </p>
 <p>
-	<%= f.label :price %><br>
-	<%= f.text_field :price %>
+  <%= f.label :price %><br>
+  <%= f.text_field :price %>
 </p>
 <p>
-	<%= f.label :street_address %><br>
-	<%= f.text_field :street_address %>
+  <%= f.label :street_address %><br>
+  <%= f.text_field :street_address %>
 </p>
 <p>
-	<%= f.label :neighbourhood %><br>
-	<%= f.text_field :neighbourhood %>
+  <%= f.label :hood %><br>
+  <%= f.text_field :neighbourhood %>
 </p>
 <p>
-	<%= f.label :phone %><br>
-	<%= f.text_field :phone %>
+  <%= f.label :phone %><br>
+  <%= f.text_field :phone %>
 </p>
 <p>
-	<%= f.submit "Save" %><br>
+  <%= f.submit "Save" %><br>
 </p>
 <% end %>

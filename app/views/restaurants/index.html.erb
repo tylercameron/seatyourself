@@ -1,11 +1,10 @@
 <h1>Yes, you can sit with us.</h1>
 <h3>Explore Seat Yoself tables</h2>
 
-<%= link_to "Add a new Restaurant", new_restaurant_path %>
+<!-- <%= link_to "Add a new Restaurant", new_restaurant_path %> -->
 
 <% @restaurants.each do |restaurant| %>
-  <p><%= restaurant.name.upcase %>, <%= restaurant.cuisine %> </p>
-    <p> <%= restaurant.price %></p>
+  <p><%= restaurant.name.upcase %></br><%= restaurant.cuisine %></br><%= restaurant.price %></p>
 
     <%= link_to "More details", restaurant_path(restaurant) %>
 <% end %>
