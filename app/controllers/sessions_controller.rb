@@ -3,8 +3,8 @@ class SessionsController < ApplicationController
   end
 
   def create
-    user = User.find_by(email_params[:email])
-    if user && user.authenticate(params [:password])
+    user = User.find_by(email: params[:email])
+    if user && user.authenticate(params[:password])
       session [:user_id] == user.id
       redirect_to reservations_url, notice: "Logged in!"
     else
@@ -15,6 +15,6 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = nil
-    redirect_to reservations_url, notice: "Logged out!" # => Has to change later
+    redirect_to reservations_url, notice: "Logged out!"
   end
 end
