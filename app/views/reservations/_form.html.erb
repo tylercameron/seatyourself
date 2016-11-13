@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <%= form_for reservation do |f| %>
+=======
+<%= form_for @reservation do |f| %>
+>>>>>>> changeTableColumn
   <% if @reservation.errors.any? %>
     <div>
       <h2><%= pluralize(@reservation.errors.count, "error")%> Prohibited this product from being saved:</h2>
@@ -11,6 +15,7 @@
     </div>
   <% end %>
 <div class="field">
+<<<<<<< HEAD
   <%= f.label :date %>
   <%= f.text_field :date%>
 </div>
@@ -22,6 +27,19 @@
 <div class="field">
   <%= f.label "Number of People" %>
   <%= f.text_field :number_of_seats %>
+=======
+  <%= f.label "Date:" %>
+  <%= f.date_field :date_of_reservation %>
+</div>
+<div class="field">
+  <%= f.label "Time:" %>
+  <%= f.time_field :time_of_reservation %>
+</div>
+
+<div class="field">
+  <%= f.label "Number of People:" %>
+  <%= f.number_field :number_of_seats%>
+>>>>>>> changeTableColumn
 </div>
 
 <div class="actions">
