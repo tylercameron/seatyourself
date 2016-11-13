@@ -1,4 +1,3 @@
-
 <%= form_for @reservation do |f| %>
 
   <% if @reservation.errors.any? %>
@@ -26,7 +25,7 @@
 </div>
 
 <div class="field">
-  <%= f.label "Number of People:" %>
+  <%= f.label "Guests:" %>
   <%= f.number_field :number_of_seats%>
 </div>
 
