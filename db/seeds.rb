@@ -8,7 +8,7 @@
 
 Restaurant.create(
   name: 'Figo',
-  description: 'FIGO offers Italian inspired cuisine in a stylishly elegant setting. Using the freshest and finest ingredients, Executive Chef Anna Chen brings her own distinctive take on Italian cuisine using contemporary techniques. The menu features house-made ricotta, wood-fired pizzas, and made-from-scratch pastas. At FIGO, our approach is simple; source the best ingredients possible and prepare them in an uncomplicated and modern way.'
+  description: 'FIGO offers Italian inspired cuisine in a stylishly elegant setting. Using the freshest and finest ingredients, Executive Chef Anna Chen brings her own distinctive take on Italian cuisine using contemporary techniques. The menu features house-made ricotta, wood-fired pizzas, and made-from-scratch pastas. At FIGO, our approach is simple; source the best ingredients possible and prepare them in an uncomplicated and modern way.',
   cuisine: 'Italian',
   price: '$$$$',
   street_address: '295 Adelaide Street W.',
@@ -28,7 +28,7 @@ Restaurant.create(
 
 Restaurant.create(
   name: 'Maman',
-  description: "Maman serves family-inspired recipes, bringing to life childhood favourites, both savoury and sweet, from the South of France and North America. The dishes focus on the highese quality, locally sourced ingredients and highlight Chef Arnal's classic French technique."
+  description: "Maman serves family-inspired recipes, bringing to life childhood favourites, both savoury and sweet, from the South of France and North America. The dishes focus on the highese quality, locally sourced ingredients and highlight Chef Arnal's classic French technique.",
   cuisine: 'French',
   price: '$$',
   street_address: '1 First Canadian Place',
