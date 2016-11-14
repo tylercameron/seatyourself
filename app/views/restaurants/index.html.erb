@@ -8,3 +8,8 @@
 
     <%= link_to "More details", restaurant_path(restaurant) %>
 <% end %>
+
+<%= form_tag(restaurants_path, :method => "get", id: "search-form") do %>
+<%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
+<%= submit_tag "Search" %>
+<% end %>
