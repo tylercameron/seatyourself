@@ -15,4 +15,4 @@
 
 <% end %>
 
-<p>Don't have an account? <%= link_to "Sign up", new_user_path %></p>
+<p>Don't have an account? <%= link_to "Sign up", new_user_path(:restaurant => params[:restaurant])%></p>
