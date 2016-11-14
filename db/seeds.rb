@@ -7,14 +7,14 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Restaurant.create(
-  name: 'Figo',
-  description: 'FIGO offers Italian inspired cuisine in a stylishly elegant setting. Using the freshest and finest ingredients, Executive Chef Anna Chen brings her own distinctive take on Italian cuisine using contemporary techniques. The menu features house-made ricotta, wood-fired pizzas, and made-from-scratch pastas. At FIGO, our approach is simple; source the best ingredients possible and prepare them in an uncomplicated and modern way.',
-  cuisine: 'Italian',
-  price: '$$$$',
-  street_address: '295 Adelaide Street W.',
-  neighbourhood: 'Entertainment District',
-  phone: 7483446,
-  image: '/app/assets/images/figo.jpg'
+ name: 'Figo',
+ description: 'FIGO offers Italian inspired cuisine in a stylishly elegant setting. Using the freshest and finest ingredients, Executive Chef Anna Chen brings her own distinctive take on Italian cuisine using contemporary techniques. The menu features house-made ricotta, wood-fired pizzas, and made-from-scratch pastas. At FIGO, our approach is simple; source the best ingredients possible and prepare them in an uncomplicated and modern way.',
+ cuisine: 'Italian',
+ price: '$$$$',
+ street_address: '295 Adelaide Street W.',
+ neighbourhood: 'Entertainment District',
+ phone: 7483446,
+ image: 'figo.jpg'
 )
 
 Restaurant.create(
@@ -25,7 +25,7 @@ Restaurant.create(
   street_address: '504 Adelaide St W',
   neighbourhood: 'Entertainment District',
   phone: 7772800,
-  image: '/app/assets/images/campechano.jpg'
+  image: 'campechano.jpg'
 )
 
 Restaurant.create(
@@ -36,7 +36,7 @@ Restaurant.create(
   street_address: '1 First Canadian Place',
   neighbourhood: 'Financial District',
   phone: 2166767,
-  image: '/app/assets/images/maman.jpg'
+  image: 'maman.jpg'
 )
 
 Restaurant.create(
@@ -47,7 +47,7 @@ Restaurant.create(
   street_address: '60 Sudbury St.',
   neighbourhood: 'Liberty Village',
   phone: 5852525,
-  image: '/app/assets/images/recess.jpg'
+  image: 'recess.jpg'
 )
 
 Restaurant.create(
@@ -58,7 +58,7 @@ Restaurant.create(
   street_address: '2 Lakeview Ave',
   neighbourhood: 'Dundas West',
   phone: 8888888,
-  image: '/app/assets/images/hanmoto.jpg'
+  image: 'hanmoto.jpg'
 )
 
 Restaurant.create(
@@ -69,7 +69,7 @@ Restaurant.create(
   street_address: '974 College St.',
   neighbourhood: 'Downtown',
   phone: 7484777,
-  image: '/app/assets/images/cafeteria.jpg'
+  image: 'cafeteria.jpg'
 )
 
 Restaurant.create(
@@ -80,7 +80,7 @@ Restaurant.create(
   street_address: '2766 Dundas W',
   neighbourhood: 'Dundas West',
   phone: 6049992,
-  image: '/app/assets/images/honestweight.jpg'
+  image: 'honestweight.jpg'
 )
 
 Restaurant.create(
@@ -91,7 +91,7 @@ Restaurant.create(
   street_address: '1265 Queen Street West',
   neighbourhood: 'Parkdale',
   phone: 5371265,
-  image: '/app/assets/images/commodore.jpg'
+  image: 'commodore.jpg'
 )
 
 Restaurant.create(
@@ -102,7 +102,7 @@ Restaurant.create(
   street_address: '5421 Yonge St',
   neighbourhood: 'Downtown',
   phone: 3451155,
-  image: '/app/assets/images/artisannoodle.jpg'
+  image: 'artisannoodle.jpg'
 )
 
 Restaurant.create(
@@ -113,5 +113,5 @@ Restaurant.create(
   street_address: '1198 Queen Street West',
   neighbourhood: 'Queen Street West',
   phone: 4649100,
-  image: '/app/assets/images/dandylion.jpg'
+  image: 'dandylion.jpg'
 )

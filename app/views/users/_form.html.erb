@@ -28,7 +28,9 @@
     <%= f.label :password_confirmation  %><br>
     <%= f.password_field :password_confirmation %>
   </p>
-
+  <p>
+    <%= f.hidden_field :restaurant_id, value: restaurant %>
+  </p>
 
   <%= f.submit "Submit" %>
 <% end %>
