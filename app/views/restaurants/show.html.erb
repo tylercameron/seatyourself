@@ -1,12 +1,9 @@
 <%= link_to "Back to Restaurants", restaurants_url %>
 
-<p><%= @restaurant.name %>, <%= @restaurant.cuisine %> </p>
-  <p> <%= @restaurant.price %></p>
-  <p> <%= @restaurant.description %></p>
+<!-- add picture of restaurant -->
+<p><%= @restaurant.name %></br>
+<%= @restaurant.street_address %>, <%= @restaurant.neighbourhood %> | <%= @restaurant.phone %></p>
+<%= @restaurant.cuisine %> | <%= @restaurant.price %></p>
+<p> <%= @restaurant.description %></p>
 
-
-<p><%= @restaurant.street_address %>, <%= @restaurant.neighbourhood %></p>
-<p><%= @restaurant.phone %></p>
-
-
-<%= link_to "Reserve", new_session_path %> 
+<%= link_to "Reserve", new_session_path %>

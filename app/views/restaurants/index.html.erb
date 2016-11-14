@@ -5,8 +5,8 @@
 
 <% @restaurants.each do |restaurant| %>
   <p><%= restaurant.name.upcase %></br><%= restaurant.cuisine %></br><%= restaurant.price %></p>
-
-    <%= link_to "More details", restaurant_path(restaurant) %>
+  <img src="<%= restaurant.image %>">
+  <%= link_to "More details", restaurant_path(restaurant) %>
 <% end %>
 
 <%= form_tag(restaurants_path, :method => "get", id: "search-form") do %>

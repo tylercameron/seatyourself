@@ -13,7 +13,8 @@ Restaurant.create(
   price: '$$$$',
   street_address: '295 Adelaide Street W.',
   neighbourhood: 'Entertainment District',
-  phone: 7483446
+  phone: 7483446,
+  image: '/app/assets/images/figo.jpg'
 )
 
 Restaurant.create(
@@ -23,7 +24,8 @@ Restaurant.create(
   price: '$$',
   street_address: '504 Adelaide St W',
   neighbourhood: 'Entertainment District',
-  phone: 7772800
+  phone: 7772800,
+  image: '/app/assets/images/campechano.jpg'
 )
 
 Restaurant.create(
@@ -33,7 +35,8 @@ Restaurant.create(
   price: '$$',
   street_address: '1 First Canadian Place',
   neighbourhood: 'Financial District',
-  phone: 2166767
+  phone: 2166767,
+  image: '/app/assets/images/maman.jpg'
 )
 
 Restaurant.create(
@@ -43,7 +46,8 @@ Restaurant.create(
   price: '$$',
   street_address: '60 Sudbury St.',
   neighbourhood: 'Liberty Village',
-  phone: 5852525
+  phone: 5852525,
+  image: '/app/assets/images/recess.jpg'
 )
 
 Restaurant.create(
@@ -53,7 +57,8 @@ Restaurant.create(
   price: '$',
   street_address: '2 Lakeview Ave',
   neighbourhood: 'Dundas West',
-  phone: 8888888
+  phone: 8888888,
+  image: '/app/assets/images/hanmoto.jpg'
 )
 
 Restaurant.create(
@@ -63,7 +68,8 @@ Restaurant.create(
   price: '$$',
   street_address: '974 College St.',
   neighbourhood: 'Downtown',
-  phone: 7484777
+  phone: 7484777,
+  image: '/app/assets/images/cafeteria.jpg'
 )
 
 Restaurant.create(
@@ -73,7 +79,8 @@ Restaurant.create(
   price: '$$$',
   street_address: '2766 Dundas W',
   neighbourhood: 'Dundas West',
-  phone: 6049992
+  phone: 6049992,
+  image: '/app/assets/images/honestweight.jpg'
 )
 
 Restaurant.create(
@@ -83,7 +90,8 @@ Restaurant.create(
   price: '$$',
   street_address: '1265 Queen Street West',
   neighbourhood: 'Parkdale',
-  phone: 5371265
+  phone: 5371265,
+  image: '/app/assets/images/commodore.jpg'
 )
 
 Restaurant.create(
@@ -93,7 +101,8 @@ Restaurant.create(
   price: '$$',
   street_address: '5421 Yonge St',
   neighbourhood: 'Downtown',
-  phone: 3451155
+  phone: 3451155,
+  image: '/app/assets/images/artisannoodle.jpg'
 )
 
 Restaurant.create(
@@ -103,5 +112,6 @@ Restaurant.create(
   price: '$$',
   street_address: '1198 Queen Street West',
   neighbourhood: 'Queen Street West',
-  phone: 4649100
+  phone: 4649100,
+  image: '/app/assets/images/dandylion.jpg'
 )
