@@ -7,6 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Restaurant.create(
+<<<<<<< HEAD
  name: 'Figo',
  description: 'FIGO offers Italian inspired cuisine in a stylishly elegant setting. Using the freshest and finest ingredients, Executive Chef Anna Chen brings her own distinctive take on Italian cuisine using contemporary techniques. The menu features house-made ricotta, wood-fired pizzas, and made-from-scratch pastas. At FIGO, our approach is simple; source the best ingredients possible and prepare them in an uncomplicated and modern way.',
  cuisine: 'Italian',
@@ -15,6 +16,17 @@ Restaurant.create(
  neighbourhood: 'Entertainment District',
  phone: 7483446,
  image: 'figo.jpg'
+=======
+  name: 'Figo',
+  description: 'FIGO offers Italian inspired cuisine in a stylishly elegant setting. Using the freshest and finest ingredients, Executive Chef Anna Chen brings her own distinctive take on Italian cuisine using contemporary techniques. The menu features house-made ricotta, wood-fired pizzas, and made-from-scratch pastas. At FIGO, our approach is simple; source the best ingredients possible and prepare them in an uncomplicated and modern way.',
+  cuisine: 'Italian',
+  price: '$$$$',
+  street_address: '295 Adelaide Street W.',
+  neighbourhood: 'Entertainment District',
+  phone: 7483446,
+  image: 'figo.jpg',
+  capacity: 100
+>>>>>>> 00a911db3c4aa8a52d7241a4c520ec7ea74d69bc
 )
 
 Restaurant.create(
@@ -25,7 +37,12 @@ Restaurant.create(
   street_address: '504 Adelaide St W',
   neighbourhood: 'Entertainment District',
   phone: 7772800,
+<<<<<<< HEAD
   image: 'campechano.jpg'
+=======
+  image: '/app/assets/images/campechano.jpg',
+  capacity: 75
+>>>>>>> 00a911db3c4aa8a52d7241a4c520ec7ea74d69bc
 )
 
 Restaurant.create(
@@ -36,7 +53,12 @@ Restaurant.create(
   street_address: '1 First Canadian Place',
   neighbourhood: 'Financial District',
   phone: 2166767,
+<<<<<<< HEAD
   image: 'maman.jpg'
+=======
+  image: '/app/assets/images/maman.jpg',
+  capacity: 100
+>>>>>>> 00a911db3c4aa8a52d7241a4c520ec7ea74d69bc
 )
 
 Restaurant.create(
@@ -47,7 +69,12 @@ Restaurant.create(
   street_address: '60 Sudbury St.',
   neighbourhood: 'Liberty Village',
   phone: 5852525,
+<<<<<<< HEAD
   image: 'recess.jpg'
+=======
+  image: '/app/assets/images/recess.jpg',
+  capacity: 200
+>>>>>>> 00a911db3c4aa8a52d7241a4c520ec7ea74d69bc
 )
 
 Restaurant.create(
@@ -58,7 +85,12 @@ Restaurant.create(
   street_address: '2 Lakeview Ave',
   neighbourhood: 'Dundas West',
   phone: 8888888,
+<<<<<<< HEAD
   image: 'hanmoto.jpg'
+=======
+  image: '/app/assets/images/hanmoto.jpg',
+  capacity: 250
+>>>>>>> 00a911db3c4aa8a52d7241a4c520ec7ea74d69bc
 )
 
 Restaurant.create(
@@ -69,7 +101,12 @@ Restaurant.create(
   street_address: '974 College St.',
   neighbourhood: 'Downtown',
   phone: 7484777,
+<<<<<<< HEAD
   image: 'cafeteria.jpg'
+=======
+  image: '/app/assets/images/cafeteria.jpg',
+  capacity: 150
+>>>>>>> 00a911db3c4aa8a52d7241a4c520ec7ea74d69bc
 )
 
 Restaurant.create(
