@@ -8,7 +8,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       flash[:notice] = "Yo signed up!"
-      redirect_to restaurants_path
+      redirect_to new_restaurant_reservation_url(params[:restaurant_id])
     else
       flash[:notice] = "Try again yo!"
       render "new"

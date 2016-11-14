@@ -1,3 +1,5 @@
+<%= form_for @user do |f| %>
+
 <% if @user.errors.any? %>
   <ul>
     <% @user.errors.full_messages.each do |m| %>
@@ -6,7 +8,6 @@
   </ul>
 <% end %>
 
-<%= form_for @user do |f| %>
   <p>
     <%= f.label :name  %><br>
     <%= f.text_field :name %>
@@ -29,4 +30,5 @@
   </p>
 
   <%= f.submit "Submit" %>
+
 <% end %>

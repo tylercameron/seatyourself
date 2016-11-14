@@ -1,4 +1,4 @@
-<%= form_for @reservation do |f| %>
+<%= form_for([@restaurant, @reservation]) do |f| %>
 
   <% if @reservation.errors.any? %>
     <div>
@@ -12,9 +12,11 @@
     </div>
   <% end %>
 
-<div class="field">
-  <%= f.label "Restaurant:" %>
-  <%= f.text_field :restaurant_id%>
+
+<%= f.hidden_field :restaurant_id, value=>params[:restaurant_id] %>
+<%= f.hidden_field :user_id, value=>params[:user_id] %>
+
+<%= @restaurant.name.upcase %>
 <div class="field">
   <%= f.label "Date:" %>
   <%= f.date_field :date_of_reservation %>
@@ -32,4 +34,5 @@
 <div class="actions">
   <%= f.submit %>
 </div>
+
 <% end %>

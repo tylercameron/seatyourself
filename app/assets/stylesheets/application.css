@@ -1,15 +1,48 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body {
+  background-color: #F9F6F0;
+}
+
+#nav h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  color: #707E4C;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ a {
+  font-family: "Josefin Sans", sans-serif;
+  color: #707E4C ;
+  text-decoration: none;
+  color: white;
+}
+
+.restaurant-list {
+
+
+}
+/*.main {
+    height: 1000px;
+    margin-top: 150px;
+    background-image: url("http://del.h-cdn.co/assets/15/48/1600x800/landscape-1448313938-friends-eating-meal-table-view.jpg");
+}
+*/
+.main h1 {
+    color: #FBF9F7;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.style_image {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}

@@ -1,18 +1,27 @@
 class ReservationsController < ApplicationController
+  before_action :load_restaurant
+  before_action :ensure_logged_in, only: [:create, :destroy]
+
   def index
     @reservations = Reservation.all
   end
 
   def show
     @reservation = Reservation.find(params[:id])
+
+    if current_user
+      @user = @reservation.users.build
+    end
   end
 
   def new
     @reservation = Reservation.new
+    @restaurant = Restaurant.find(params[:restaurant_id])
   end
 
   def create
     @reservation = Reservation.new(reservation_params)
+    @reservation.user = current_user
       if @reservation.save
         redirect_to reservations_url
       else
@@ -22,10 +31,12 @@ class ReservationsController < ApplicationController
 
   def edit
     @reservation = Reservation.find(params[:id])
+    @restaurant = Restaurant.find(params[:restaurant_id])
   end
 
   def update
     @reservation = Reservation.find(params[:id])
+    @restaurant = Restaurant.find(params[:restaurant_id])
       if @reservation.update_attributes(reservation_params)
         redirect_to reservation_url(@reservation)
       else
@@ -43,4 +54,9 @@ class ReservationsController < ApplicationController
   def reservation_params
     params.require(:reservation).permit(:date_of_reservation, :time_of_reservation, :number_of_seats)
   end
+
+  def load_restaurant
+    @restaurant = Restaurant.find(params[:restaurant_id])
+  end
+
 end

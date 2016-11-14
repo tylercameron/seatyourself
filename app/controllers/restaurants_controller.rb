@@ -13,6 +13,9 @@ class RestaurantsController < ApplicationController
 
   def show
     @restaurant = Restaurant.find(params[:id])
+    if current_user
+      @reservation = @restaurant.reservations.build
+    end
   end
 
   def create
@@ -42,6 +45,6 @@ class RestaurantsController < ApplicationController
 private
 
   def restaurant_params
-    params.require(:restaurant).permit(:name, :description, :cuisine, :price, :street_address, :neighbourhood, :phone)
+    params.require(:restaurant).permit(:name, :description, :cuisine, :price, :street_address, :neighbourhood, :phone, :image)
   end
 end
