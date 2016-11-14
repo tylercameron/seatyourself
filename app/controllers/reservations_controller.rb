@@ -18,6 +18,7 @@ class ReservationsController < ApplicationController
       if @reservation.save
         redirect_to reservations_url
       else
+        flash.now[:notice] = "Sorry, you cant sit with us at that time! Please try again, we want you at our table :)"
         render :new
       end
     end
