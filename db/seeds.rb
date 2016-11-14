@@ -14,7 +14,8 @@ Restaurant.create(
   street_address: '295 Adelaide Street W.',
   neighbourhood: 'Entertainment District',
   phone: 7483446,
-  image: 'figo.jpg'
+  image: 'figo.jpg',
+  capacity: 100
 )
 
 Restaurant.create(
@@ -25,7 +26,8 @@ Restaurant.create(
   street_address: '504 Adelaide St W',
   neighbourhood: 'Entertainment District',
   phone: 7772800,
-  image: 'campechano.jpg'
+  image: 'campechano.jpg',
+  capacity: 75
 )
 
 Restaurant.create(
@@ -36,7 +38,8 @@ Restaurant.create(
   street_address: '1 First Canadian Place',
   neighbourhood: 'Financial District',
   phone: 2166767,
-  image: 'maman.jpg'
+  image: 'maman.jpg',
+  capacity: 100
 )
 
 Restaurant.create(
@@ -47,7 +50,8 @@ Restaurant.create(
   street_address: '60 Sudbury St.',
   neighbourhood: 'Liberty Village',
   phone: 5852525,
-  image: 'recess.jpg'
+  image: 'recess.jpg',
+  capacity: 200
 )
 
 Restaurant.create(
@@ -58,7 +62,8 @@ Restaurant.create(
   street_address: '2 Lakeview Ave',
   neighbourhood: 'Dundas West',
   phone: 8888888,
-  image: 'hanmoto.jpg'
+  image: 'hanmoto.jpg',
+  capacity: 250
 )
 
 Restaurant.create(
@@ -69,7 +74,8 @@ Restaurant.create(
   street_address: '974 College St.',
   neighbourhood: 'Downtown',
   phone: 7484777,
-  image: 'cafeteria.jpg'
+  image: 'cafeteria.jpg',
+  capacity: 150
 )
 
 Restaurant.create(

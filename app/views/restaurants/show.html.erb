@@ -6,4 +6,4 @@
 <%= @restaurant.cuisine %> | <%= @restaurant.price %></p>
 <p> <%= @restaurant.description %></p>
 
-<%= link_to "Reserve", new_reservation_path %>
+<%= link_to "Reserve", new_restaurant_reservation_path(@restaurant)%>
