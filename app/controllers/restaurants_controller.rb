@@ -8,11 +8,6 @@ class RestaurantsController < ApplicationController
     end
   end
 
-  def self.search(search)
-    where("name ILIKE ?", "%#{search}%")
-    where("content ILIKE ?", "%#{search}%")
-  end
-
   def edit
     @restaurant = Restaurant.find(params[:id])
   end
