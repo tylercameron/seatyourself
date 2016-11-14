@@ -1,6 +1,16 @@
 class RestaurantsController < ApplicationController
   def index
-    @restaurants = Restaurant.all
+      @restaurants = Restaurant.all
+      if params[:search]
+      @restaurants = Restaurant.search(params[:search]).order("created_at DESC")
+    else
+      @restaurants = Restaurant.all.order('created_at DESC')
+    end
+  end
+
+  def self.search(search)
+    where("name ILIKE ?", "%#{search}%")
+    where("content ILIKE ?", "%#{search}%")
   end
 
   def edit
