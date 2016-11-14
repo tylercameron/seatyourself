@@ -15,4 +15,19 @@ class Restaurant < ApplicationRecord
 
   has_many :reservations
   has_many :users, through: :reservations
+
+
+  def available (party_size, time)
+    party_size > 0 && available_capacity(time) >= party_size
+  end
+
+  private
+  def available_capacity(time)
+    capacity - reservation_at(time).sum(:number_of_seats)
+  end
+
+  def reservation_at(time)
+    reservations.where(time_of_reservation: time.beginning_of_hour..time.end_of_hour)
+  end
+
 end

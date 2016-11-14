@@ -13,11 +13,14 @@ class ReservationsController < ApplicationController
 
   def create
     @reservation = Reservation.new(reservation_params)
+    @restaurant = Restaurant.find(reservation_params[:restaurant_id])
+    if @restaurant.available(reservation_params[:number_of_seats].to_i,reservation_params[:time_of_reservation].to_time)
       if @reservation.save
         redirect_to reservations_url
       else
         render :new
       end
+    end
   end
 
   def edit
@@ -41,6 +44,6 @@ class ReservationsController < ApplicationController
 
   private
   def reservation_params
-    params.require(:reservation).permit(:date_of_reservation, :time_of_reservation, :number_of_seats)
+    params.require(:reservation).permit(:restaurant_id,:date_of_reservation, :time_of_reservation, :number_of_seats)
   end
 end
