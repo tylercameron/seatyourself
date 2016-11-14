@@ -18,7 +18,11 @@ body {
   padding: 0;
 }
 
- a {
+#nav li {
+  float: right;
+}
+
+a {
   font-family: "Josefin Sans", sans-serif;
   color: #707E4C ;
   text-decoration: none;
