@@ -10,6 +10,7 @@
     </div>
   <% end %>
 
+<div class="form">
 <%= form_for [@restaurant, @reservation] do |f| %>
 <%= @restaurant.name.upcase %>
 <div class="field">
@@ -30,5 +31,5 @@
 <div class="actions">
   <%= f.submit %>
 </div>
-
 <% end %>
+</div>
