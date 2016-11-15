@@ -14,16 +14,16 @@
 
 <div id="title"><h1><a href="/">Seat Yoself!</a><h1></div>
 
-<div id="header">
+<!-- <div id="header">
 <div class="nav">
   <div class="container">
     <ul>
       <li><a href="/users/new">Sign up</a></li><br>
-      <li><a href="/sessions/new">Log in</a></li><br>
+      <li><a href="/sessions/new">Log in</a></li><br> -->
       <!-- <li><a href="">Log out</a></li> -->
-    </ul>
+    <!-- </ul>
   </div>
-</div>
+</div> -->
 <div class="userinfo">
   <% if current_user %>
     Yo, <%= current_user.name %></br><%= link_to "Log out", session_path("current"), :method => :delete %>

@@ -21,7 +21,7 @@ a {
 .userinfo {
   color: #89907F;
   font-weight: bolder;
-  margin-top: -130px;
+  margin-top: -80px;
   float: right;
   /*display: block;*/
   /*display: inline-block;*/
@@ -105,11 +105,11 @@ h1 {
 #back-link{
 }
 
-.nav li {
+/*.nav li {
   font-weight: bolder;
   list-style-type: none;
   float: right;
   color: #89907F;
   margin-top: -40px;
   padding-right: 10px;
-}
+}*/
