@@ -6,7 +6,8 @@ body {
 
 #title a {
   font-family: 'Permanent Marker', cursive;
-  font-size: 50px;
+  /*font-family: 'Abril Fatface', cursive;*/
+  font-size: 30px;
   padding-left: 10px;
   /*padding-left: 500px;*/
 }
@@ -21,7 +22,7 @@ a {
 .userinfo {
   color: #89907F;
   font-weight: bolder;
-  margin-top: -80px;
+  margin-top: -70px;
   float: right;
   /*display: block;*/
   /*display: inline-block;*/
@@ -29,7 +30,7 @@ a {
 }
 
 .main {
-    height: 300px;
+    height: 400px;
     width: 70%;
     margin-top: 10px;
     opacity: 0.7;
@@ -61,7 +62,7 @@ h2 {
   font-family: 'Lato', sans-serif;
   font-size: 20px;
   color: #89907F;
-  display: inline;
+  text-align: center;
 }
 
 h1 {
@@ -79,32 +80,59 @@ h1 {
   text-decoration: none;
 }
 
-.index_image {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    /*display: inline-block;*/
+.restaurant-info {
+  display: inline-block;
+}
 
+
+.index_image {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+
+    /*display: inline-block;*/
 }
 
 .show_image {
     float: left;
     height: 300px;
     width: 300px;
-    padding-right: 20px;
-    padding-top: 20px;
+    border-radius: 50%;
+    /*padding-right: 20px;
+    padding-top: 20px;*/
 }
 
 .form {
 }
 
 .restaurant-description{
-    padding-top: 20px;
+    /*padding-top: 20px;*/
+    /*padding-left: 250px;*/
+    float: left;
+    display: inline-block;
+    width: 50%;
+    padding-left: 59px;
+}
+
+.restaurant-description h3 {
+  font-size: 3em;
 }
 
 #back-link{
 }
 
+footer {
+  font-family: 'Lato', sans-serif;
+  /*font-weight: lighter;*/
+  font-size: 12px;
+  color: #89907F;
+  padding-left: 500px;
+  padding-top: 20px;
+}
+
+#reserve {
+  font-size: 10em;
+}
 /*.nav li {
   font-weight: bolder;
   list-style-type: none;

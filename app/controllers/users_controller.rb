@@ -10,8 +10,6 @@ def create
   if @user.save
     flash[:notice] = "Yo signed up!"
     log_in @user
-    puts session[:user_id]
-    puts "------------------"
     redirect_to restaurants_url(route_params[:restaurant_id])
   else
     flash[:notice] = "Try again yo!"

@@ -3,9 +3,11 @@
 <!-- <%= link_to "Add a new Restaurant", new_restaurant_path %> -->
 
 <% @restaurants.each do |restaurant| %>
+<div class="restaurant-info">
   <ul>
     <p><%= restaurant.name.upcase %></br><%= restaurant.cuisine %></br><%= restaurant.price %>
     <%= image_tag restaurant.image, :class => "index_image" %>
     <%= link_to "More details", restaurant_path(restaurant) %></p>
   </ul>
+</div>
 <% end %>

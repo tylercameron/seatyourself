@@ -88,7 +88,8 @@ Restaurant.create(
   street_address: '2766 Dundas W',
   neighbourhood: 'Dundas West',
   phone: 6049992,
-  image: 'honestweight.jpg'
+  image: 'honestweight.jpg',
+  capacity: 100
 )
 
 Restaurant.create(
@@ -99,7 +100,8 @@ Restaurant.create(
   street_address: '1265 Queen Street West',
   neighbourhood: 'Parkdale',
   phone: 5371265,
-  image: 'commodore.jpg'
+  image: 'commodore.jpg',
+  capacity: 100
 )
 
 Restaurant.create(
@@ -110,7 +112,8 @@ Restaurant.create(
   street_address: '5421 Yonge St',
   neighbourhood: 'Downtown',
   phone: 3451155,
-  image: 'artisannoodle.jpg'
+  image: 'artisannoodle.jpg',
+  capacity: 50
 )
 
 Restaurant.create(
@@ -121,5 +124,6 @@ Restaurant.create(
   street_address: '1198 Queen Street West',
   neighbourhood: 'Queen Street West',
   phone: 4649100,
-  image: 'dandylion.jpg'
+  image: 'dandylion.jpg',
+  capacity: 150
 )

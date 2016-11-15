@@ -18,11 +18,9 @@ end
 
 def show
   @restaurant = Restaurant.find(params[:id])
-
   if current_user
     @reservation = @restaurant.reservations.build
   end
-
 end
 
 def create
@@ -52,7 +50,7 @@ end
 private
 
 def restaurant_params
-    params.require(:restaurant).permit(:name, :description, :cuisine, :price, :street_address, :neighbourhood, :phone, :capacity, :image)
+    params.require(:restaurant).permit(:name, :description, :cuisine, :price, :street_address, :neighbourhood, :phone, :image, :capacity)
 end
 
 end
