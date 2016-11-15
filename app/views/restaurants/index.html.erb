@@ -1,8 +1,8 @@
+<h1>Yes, you can sit with us.</h1>
 <h3>Explore Seat Yoself tables</h2>
 
 <!-- <%= link_to "Add a new Restaurant", new_restaurant_path %> -->
 
-<div class="restaurant-list">
 <% @restaurants.each do |restaurant| %>
   <p><%= restaurant.name.upcase %></br><%= restaurant.cuisine %></br><%= restaurant.price %></p>
     <%= image_tag restaurant.image, :class => "index_image" %>
