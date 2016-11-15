@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Restaurant.create(
-<<<<<<< HEAD
+
   name: 'Figo',
   description: 'FIGO offers Italian inspired cuisine in a stylishly elegant setting. Using the freshest and finest ingredients, Executive Chef Anna Chen brings her own distinctive take on Italian cuisine using contemporary techniques. The menu features house-made ricotta, wood-fired pizzas, and made-from-scratch pastas. At FIGO, our approach is simple; source the best ingredients possible and prepare them in an uncomplicated and modern way.',
   cuisine: 'Italian',
@@ -26,7 +26,7 @@ Restaurant.create(
   street_address: '504 Adelaide St W',
   neighbourhood: 'Entertainment District',
   phone: 7772800,
-  image: 'campechano.jpg'
+  image: 'campechano.jpg',
   capacity: 75
 )
 
@@ -38,7 +38,7 @@ Restaurant.create(
   street_address: '1 First Canadian Place',
   neighbourhood: 'Financial District',
   phone: 2166767,
-  image: 'maman.jpg'
+  image: 'maman.jpg',
   capacity: 100
 )
 
@@ -50,7 +50,7 @@ Restaurant.create(
   street_address: '60 Sudbury St.',
   neighbourhood: 'Liberty Village',
   phone: 5852525,
-  image: 'recess.jpg'
+  image: 'recess.jpg',
   capacity: 200
 )
 
@@ -62,7 +62,7 @@ Restaurant.create(
   street_address: '2 Lakeview Ave',
   neighbourhood: 'Dundas West',
   phone: 8888888,
-  image: 'hanmoto.jpg'
+  image: 'hanmoto.jpg',
   capacity: 250
 )
 
@@ -75,7 +75,6 @@ Restaurant.create(
   neighbourhood: 'Downtown',
   phone: 7484777,
   image: 'cafeteria.jpg'
-  image: '/app/assets/images/cafeteria.jpg',
   capacity: 150
 )
 

@@ -51,13 +51,8 @@ end
 
 private
 
-<<<<<<< HEAD
 def restaurant_params
-  params.require(:restaurant).permit(:name, :description, :cuisine, :price, :street_address, :neighbourhood, :phone, :image)
+    params.require(:restaurant).permit(:name, :description, :cuisine, :price, :street_address, :neighbourhood, :phone, :capacity, :image)
 end
-=======
-  def restaurant_params
-    params.require(:restaurant).permit(:name, :description, :cuisine, :price, :street_address, :neighbourhood, :phone, :capacity)
-  end
->>>>>>> 00a911db3c4aa8a52d7241a4c520ec7ea74d69bc
+
 end

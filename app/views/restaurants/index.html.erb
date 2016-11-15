@@ -1,12 +1,12 @@
-<h1>Yes, you can sit with us.</h1>
 <h3>Explore Seat Yoself tables</h2>
 
 <!-- <%= link_to "Add a new Restaurant", new_restaurant_path %> -->
+<<<<<<< HEAD
+
 <div class="restaurant-list">
 <% @restaurants.each do |restaurant| %>
   <p><%= restaurant.name.upcase %></br><%= restaurant.cuisine %></br><%= restaurant.price %></p>
-  <!-- <img src="<%= restaurant.image %>"> -->
-  <%= image_tag restaurant.image %>
+    <%= image_tag restaurant.image, :class => "style_image" %>
   <%= link_to "More details", restaurant_path(restaurant) %>
 </div>
 <% end %>
@@ -15,3 +15,4 @@
 <%= text_field_tag :search, params[:search], placeholder: "Search Restaurants" %>
 <%= submit_tag "Search" %>
 <% end %>
+</div>
