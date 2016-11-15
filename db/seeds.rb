@@ -17,6 +17,7 @@ Restaurant.create(
   phone: 7483446,
   image: 'figo.jpg',
   capacity: 100
+)
 
 Restaurant.create(
   name: 'Campechano Taqueria',
@@ -31,6 +32,7 @@ Restaurant.create(
 )
 
 Restaurant.create(
+
   name: 'Maman',
   description: "Maman serves family-inspired recipes, bringing to life childhood favourites, both savoury and sweet, from the South of France and North America. The dishes focus on the highese quality, locally sourced ingredients and highlight Chef Arnal's classic French technique.",
   cuisine: 'French',
@@ -74,7 +76,7 @@ Restaurant.create(
   street_address: '974 College St.',
   neighbourhood: 'Downtown',
   phone: 7484777,
-  image: 'cafeteria.jpg'
+  image: 'cafeteria.jpg',
   capacity: 150
 )
 
