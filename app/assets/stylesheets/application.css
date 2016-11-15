@@ -2,6 +2,12 @@ body {
   background-color: #F9F6F0;
 }
 
+.search h1 {
+  color: #FBF9F7;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*#nav h4 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 10px;
@@ -44,12 +50,21 @@ a {
     color: #FBF9F7;
     padding-top: 20px;
     padding-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.style_image {
+.index_image {
     height: 100px;
     width: 100px;
     border-radius: 50%;
+}
+
+.show_image {
+    height: 300px;
+    width: 300px;
+}
+
 
 body {
   font-family: 'Josefin Sans', sans-serif;

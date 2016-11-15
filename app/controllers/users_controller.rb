@@ -12,7 +12,7 @@ def create
     log_in @user
     puts session[:user_id]
     puts "------------------"
-    redirect_to restaurant_url(route_params[:restaurant_id])
+    redirect_to restaurants_url(route_params[:restaurant_id])
   else
     flash[:notice] = "Try again yo!"
     render "new"
