@@ -4,29 +4,45 @@
   <meta charset="utf-8">
   <link rel="logo" type="image/jpg" href="/images/logo_1.jpg" />
   <title>Seatyoself</title>
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Frank+Ruhl+Libre|Lato|Permanent+Marker" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-  <img src="logo.jpg"/>
+<div id="title"><h1><a href="/">Seat Yoself!</a><h1></div>
 
-  <!-- <div id="header"> -->
-
-  <div id="nav">
-    <div class="container">
-      <ul>
-        <li><a href="/users/new">Sign up</a></li></br>
-        <li><a href="/sessions/new">Log in</a></li></br>
-        <!-- <li><a href="">Log out</a></li> -->
-      </ul>
-    </div>
+<div id="header">
+<div class="nav">
+  <div class="container">
+    <ul>
+      <li><a href="/users/new">Sign up</a></li><br>
+      <li><a href="/sessions/new">Log in</a></li><br>
+      <!-- <li><a href="">Log out</a></li> -->
+    </ul>
   </div>
+</div>
+<div class="userinfo">
+  <% if current_user %>
+    Yo, <%= current_user.name %></br><%= link_to "Log out", session_path("current"), :method => :delete %>
+  <% else %>
+    <%= link_to "Log in", new_session_path %> or <%= link_to "Sign up", new_user_path %>
+  <% end %>
+</div>
+
+</div>
+
+<% if flash[:notice] %>
+  <p id="notice"><%= flash[:notice] %></p>
+<% end %>
+<% if flash[:alert] %>
+  <p id="alert"><%= flash[:alert] %></p>
+<% end %>
 
 <%= yield %>
+
 
 </body>
 </html>

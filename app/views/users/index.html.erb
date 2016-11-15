@@ -1,10 +1,12 @@
 <div class="main">
-    <h1>Yes, you can sit with us.</h1>
+  <div class="container">
+    <h1>Yes, you <em>can</em> sit with us.</h1>
     <div class="search">
-      <h1>Search</h1>
-      <%= form_tag(restaurants_path, :method => "get", id: "search-form") do %>
+      <h2>Let's find a table.</h2>
+      <h2><%= form_tag(restaurants_path, :method => "get", id: "search-form") do %>
       <%= text_field_tag :search, params[:search], placeholder: "Search Restaurants" %>
       <%= submit_tag "Search" %>
-      <% end %>
+      <% end %></h2>
     </div>
+  </div>
 </div>

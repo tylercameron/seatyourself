@@ -1,87 +1,115 @@
 body {
   background-color: #F9F6F0;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
 }
 
-.search h1 {
-  color: #FBF9F7;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/*#nav h4 {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 10px;
-  font-weight: normal;
-  color: #707E4C;
-  margin-top: 5px;
-  margin-left: auto;
-  margin-right: auto;
-}*/
-
-#nav ul {
-  list-style-type: none;
-  margin-top: 40px;
-  padding: 0;
-}
-
-#nav li {
-  float: right;
-  color: #89907F;
+#title a {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+  padding-left: 10px;
+  /*padding-left: 500px;*/
 }
 
 a {
-  font-family: "Josefin Sans", sans-serif;
-  /*color: #707E4C ;*/
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  color: #89907F;
   text-decoration: none;
-  /*color: white;*/
-  color: #89907F
 }
 
-.restaurant-list {
-  display: inline;
-  position: relative;
+.userinfo {
+  color: #89907F;
+  font-weight: bolder;
+  margin-top: -130px;
+  float: right;
+  /*display: block;*/
+  /*display: inline-block;*/
+  padding-right: 10px;
 }
 
 .main {
-    height: 500px;
-    width: 100%
-    margin-top: 50px;
-    background-image: url("http://del.h-cdn.co/assets/15/48/1600x800/landscape-1448313938-friends-eating-meal-table-view.jpg");
+    height: 300px;
+    width: 70%;
+    margin-top: 10px;
+    opacity: 0.7;
+    /*background-image: url("http://del.h-cdn.co/assets/15/48/1600x800/landscape-1448313938-friends-eating-meal-table-view.jpg");*/
+    /*background-image: url("http://66.media.tumblr.com/72d90835ed6c6ec261568ec6fca16fc9/tumblr_mw0ysq2zsG1t0mwdqo5_1280.jpg");*/
+    /*background-image: url("https://s-media-cache-ak0.pinimg.com/originals/2f/fa/1c/2ffa1c66eb3c132e715765a515e48acb.jpg");*/
+    /*background-image: url("http://www.maisondereefur.com/blog/daikanyama/wp-content/uploads/AL_1153-e1447338437148.jpg");*/
+    background-image: url("https://od.cf.ua/m/blog/f8d4e5c7591684008581db312071bb70/images/577e96efd2d23.jpg");
+    padding-top: 200px;
+    padding-left: 400px;
 }
 
-.main h1 {
+.main .container h1 {
+    font-family: 'Abril Fatface', cursive;
     font-size: 50px;
+    /*color: #89907F;*/
     color: #FBF9F7;
-    padding-top: 70px;
-    padding-left: 10px;
-    margin-left: 500;
-  }
+    text-decoration: underline;
+}
+.search h2 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 45px;
+  font-weight: lighter;
+  color: #FBF9F7;
+  display: inline;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  color: #89907F;
+  display: inline;
+}
+
+h1 {
+  /*font-family: 'Abril Fatface', cursive;*/
+  font-family: 'Lato', sans-serif;
+  /*font-weight: lighter;*/
+  font-size: 25px;
+  color: #89907F;
+  margin-bottom: 30px;
+}
+
+.restaurant-list {
+  /*display: inline-block;*/
+  /*position: relative;*/
+  text-decoration: none;
+}
 
 .index_image {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
-    display: inline;
+    /*display: inline-block;*/
+
 }
 
 .show_image {
     float: left;
     height: 300px;
     width: 300px;
+    padding-right: 20px;
+    padding-top: 20px;
 }
 
 .form {
-  align-content: center;
-}
-
-body {
-  font-family: 'Josefin Sans', sans-serif;
 }
 
 .restaurant-description{
-  float: right;
-  margin-left: 50px;
+    padding-top: 20px;
 }
 
 #back-link{
+}
+
+.nav li {
+  font-weight: bolder;
+  list-style-type: none;
+  float: right;
+  color: #89907F;
+  margin-top: -40px;
+  padding-right: 10px;
 }
