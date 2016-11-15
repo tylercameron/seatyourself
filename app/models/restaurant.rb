@@ -6,6 +6,7 @@ class Restaurant < ApplicationRecord
   def self.search(search)
     # Restaurant.fuzzy_search(search)
     where("cuisine ILIKE ?", "%#{search}%")
+     .or(where("name ILIKE ?", "%#{search}%"))
      .or(where("description ILIKE ?", "%#{search}%"))
      .or(where("cuisine ILIKE ?", "%#{search}%"))
      .or(where("price ILIKE ?", "%#{search}%"))

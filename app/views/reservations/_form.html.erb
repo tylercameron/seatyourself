@@ -1,5 +1,3 @@
-<%= form_for [@restaurant, @reservation] do |f| %>
-
   <% if @reservation.errors.any? %>
     <div>
       <h2><%= pluralize(@reservation.errors.count, "error")%> Prohibited this product from being saved:</h2>
@@ -12,6 +10,8 @@
     </div>
   <% end %>
 
+<%= form_for [@restaurant, @reservation] do |f| %>
+<%= @restaurant.name.upcase %>
 <div class="field">
   <%= f.label "Restaurant:" %>
   <%= f.text_field :restaurant_id%>

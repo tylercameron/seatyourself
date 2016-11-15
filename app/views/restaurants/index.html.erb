@@ -2,20 +2,14 @@
 <h3>Explore Seat Yoself tables</h2>
 
 <!-- <%= link_to "Add a new Restaurant", new_restaurant_path %> -->
-<<<<<<< HEAD
 
-<%= form_tag(restaurants_path, :method => "get", id: "search-form") do %>
-<%= text_field_tag :search, params[:search], placeholder: "Search Restaurants" %>
-<%= submit_tag "Search" %>
-<% end %>
-
-=======
-<div class="restaurant-list">
->>>>>>> 4ce79d739af13edeadaa161811baa805e888f367
 <% @restaurants.each do |restaurant| %>
   <p><%= restaurant.name.upcase %></br><%= restaurant.cuisine %></br><%= restaurant.price %></p>
-  <!-- <img src="<%= restaurant.image %>"> -->
-  <%= image_tag restaurant.image %>
+  <img src="<%= restaurant.image %>">
   <%= link_to "More details", restaurant_path(restaurant) %>
-</div>
+<% end %>
+
+<%= form_tag(restaurants_path, :method => "get", id: "search-form") do %>
+<%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
+<%= submit_tag "Search" %>
 <% end %>
