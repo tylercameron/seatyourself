@@ -1,5 +1,6 @@
 <h1>Log In</h1>
 
+<div class="form">
 <%= form_tag sessions_path do %>
   <div class="field">
     <%= label_tag :email %><br/>
@@ -16,3 +17,4 @@
 <% end %>
 
 <p>Don't have an account? <%= link_to "Sign up", new_user_path(:restaurant => params[:restaurant])%></p>
+</div>

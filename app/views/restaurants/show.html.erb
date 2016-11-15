@@ -1,10 +1,13 @@
+<div id="back-link">
 <%= link_to "Back to Restaurants", restaurants_url %>
+</div>
 
 <!-- add picture of restaurant -->
 <%= image_tag @restaurant.image, :class => "show_image" %>
-<p><%= @restaurant.name %></br>
+<div class="restaurant-description">
+<p><strong><%= @restaurant.name %></strong></br>
 <%= @restaurant.street_address %>, <%= @restaurant.neighbourhood %> | <%= @restaurant.phone %></p>
 <%= @restaurant.cuisine %> | <%= @restaurant.price %></p>
 <p> <%= @restaurant.description %></p>
-
-<%= link_to "Reserve", new_restaurant_reservation_path(@restaurant)%>
+</div>
+<%= link_to "RESERVE", new_restaurant_reservation_path(@restaurant)%>
