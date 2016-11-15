@@ -1,6 +1,7 @@
 <%= link_to "Back to Restaurants", restaurants_url %>
 
 <!-- add picture of restaurant -->
+<%= image_tag @restaurant.image, :class => "show_image" %>
 <p><%= @restaurant.name %></br>
 <%= @restaurant.street_address %>, <%= @restaurant.neighbourhood %> | <%= @restaurant.phone %></p>
 <%= @restaurant.cuisine %> | <%= @restaurant.price %></p>
