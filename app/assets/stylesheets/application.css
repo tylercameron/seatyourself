@@ -1,15 +1,143 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body {
+  background-color: #F9F6F0;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+}
+
+#title a {
+  font-family: 'Permanent Marker', cursive;
+  /*font-family: 'Abril Fatface', cursive;*/
+  font-size: 30px;
+  padding-left: 10px;
+  /*padding-left: 500px;*/
+}
+
+a {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  color: #89907F;
+  text-decoration: none;
+}
+
+.userinfo {
+  color: #89907F;
+  font-weight: bolder;
+  margin-top: -70px;
+  float: right;
+  /*display: block;*/
+  /*display: inline-block;*/
+  padding-right: 10px;
+}
+
+.main {
+    height: 400px;
+    width: 70%;
+    margin-top: 10px;
+    opacity: 0.7;
+    /*background-image: url("http://del.h-cdn.co/assets/15/48/1600x800/landscape-1448313938-friends-eating-meal-table-view.jpg");*/
+    /*background-image: url("http://66.media.tumblr.com/72d90835ed6c6ec261568ec6fca16fc9/tumblr_mw0ysq2zsG1t0mwdqo5_1280.jpg");*/
+    /*background-image: url("https://s-media-cache-ak0.pinimg.com/originals/2f/fa/1c/2ffa1c66eb3c132e715765a515e48acb.jpg");*/
+    /*background-image: url("http://www.maisondereefur.com/blog/daikanyama/wp-content/uploads/AL_1153-e1447338437148.jpg");*/
+    background-image: url("https://od.cf.ua/m/blog/f8d4e5c7591684008581db312071bb70/images/577e96efd2d23.jpg");
+    padding-top: 200px;
+    padding-left: 400px;
+}
+
+.main .container h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 50px;
+    /*color: #89907F;*/
+    color: #FBF9F7;
+    text-decoration: underline;
+}
+.search h2 {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 45px;
+  font-weight: lighter;
+  color: #FBF9F7;
+  display: inline;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  color: #89907F;
+  text-align: center;
+}
+
+h1 {
+  /*font-family: 'Abril Fatface', cursive;*/
+  font-family: 'Lato', sans-serif;
+  /*font-weight: lighter;*/
+  font-size: 25px;
+  color: #89907F;
+  margin-bottom: 30px;
+}
+
+.restaurant-list {
+  /*display: inline-block;*/
+  /*position: relative;*/
+  text-decoration: none;
+}
+
+.restaurant-info {
+  display: inline-block;
+}
+
+
+.index_image {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+
+    /*display: inline-block;*/
+}
+
+.show_image {
+    float: left;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    /*padding-right: 20px;
+    padding-top: 20px;*/
+}
+
+.form {
+}
+
+.restaurant-description{
+    /*padding-top: 20px;*/
+    /*padding-left: 250px;*/
+    float: left;
+    display: inline-block;
+    width: 50%;
+    padding-left: 59px;
+}
+
+.restaurant-description h3 {
+  font-size: 3em;
+}
+
+#back-link{
+}
+
+footer {
+  font-family: 'Lato', sans-serif;
+  /*font-weight: lighter;*/
+  font-size: 12px;
+  color: #89907F;
+  padding-left: 500px;
+  padding-top: 20px;
+}
+
+#reserve {
+  font-size: 10em;
+}
+/*.nav li {
+  font-weight: bolder;
+  list-style-type: none;
+  float: right;
+  color: #89907F;
+  margin-top: -40px;
+  padding-right: 10px;
+}*/

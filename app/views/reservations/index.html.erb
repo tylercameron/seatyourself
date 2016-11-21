@@ -1,0 +1,13 @@
+<%= link_to "Back to Restaurants", restaurants_url %>
+
+<h1>You're on the List for <em><%= @restaurant.name %></em></h1>
+
+<%= link_to "Add a Reservation", new_restaurant_reservation_path %></br>
+
+<!-- add restaurant name -->
+<!-- <h2><%= @restaurant.name %></h2> -->
+<% @reservations.each do |reservation| %>
+<p>Date: <%= reservation.date_of_reservation %></br>
+Time: <%= reservation.time_of_reservation %></br>
+Seats: <%= reservation.number_of_seats %></p>
+<% end %>

@@ -1,2 +1,5 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<h1>Sign up</h1>
+
+<%= render 'form', restaurant: params[:restaurant] %>
+
+<p>Already have an account? <%= link_to "Log in", new_session_path %></p>

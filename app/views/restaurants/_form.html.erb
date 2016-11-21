@@ -1,0 +1,40 @@
+<div class="form">
+<%= form_for @restaurant do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.label :cuisine  %><br>
+    <%= f.text_field :cuisine   %>
+  </p>
+  <p>
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </p>
+  <p>
+    <%= f.label :street_address %><br>
+    <%= f.text_field :street_address %>
+  </p>
+  <p>
+    <%= f.label :neighbourhood %><br>
+    <%= f.text_field :neighbourhood %>
+  </p>
+  <p>
+    <%= f.label :phone %><br>
+    <%= f.text_field :phone %>
+  </p>
+  <p>
+    <%= f.label :image %><br>
+    <%= f.text_field :url %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+</div>

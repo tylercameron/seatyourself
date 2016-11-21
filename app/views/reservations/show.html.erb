@@ -1,2 +1,9 @@
-<h1>Reservations#show</h1>
-<p>Find me in app/views/reservations/show.html.erb</p>
+<%= link_to "Back to Reservations", reservations_url %>
+
+<h2>Your table is ready!</h2>
+<!-- add name of restaurant -->
+<p>Date: <%= @reservation.date_of_reservation %></br>
+Time: <%= @reservation.time_of_reservation %></br>
+Seats: <%= @reservation.number_of_seats %></p>
+
+<%= link_to "Edit", edit_reservation_path(@reservation) %> | <%= link_to "Delete", @reservation, method: :delete, data: {confirm: "Are you sure you want to delete this reservation?"}  %>

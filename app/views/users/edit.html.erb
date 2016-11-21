@@ -1,0 +1,7 @@
+<%= link_to 'Back to Restaurants', restaurants_path %>
+
+<h2>Edit Profile</h2>
+
+<%= render 'form', user: @user %></br>
+
+<%= link_to "Back to #{@user.name}'s Profile", user_path(@user) %>

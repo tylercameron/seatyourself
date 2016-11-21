@@ -1,2 +1,10 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<%= link_to 'Back to Restaurants', restaurants_path %>
+
+<h1><%= @user.name %>'s Profile</h1>
+
+<div class="location">
+  <h4>Email: <%= @user.email %></h4>
+  <h4>Phone: <%= @user.phone %></h4>
+</div>
+
+<%= link_to 'Edit Yo Self', edit_user_path(@user) %>
